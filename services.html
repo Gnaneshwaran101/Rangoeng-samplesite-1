@@ -169,7 +169,7 @@
 
   <!-- Mobile Drawer Backdrop & Menu -->
   <div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 hidden transition-opacity" id="mobile-drawer-backdrop"></div>
-  <div class="fixed top-0 right-0 bottom-0 w-[300px] sm:w-[340px] bg-surface-container-lowest z-50 shadow-2xl p-space-lg flex flex-col justify-between" id="mobile-drawer">
+  <div class="fixed top-0 right-0 bottom-0 w-[300px] sm:w-[340px] bg-surface-container-lowest z-50 shadow-2xl p-space-lg flex-col justify-between hidden" id="mobile-drawer">
     <div class="flex flex-col gap-space-lg">
       <div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
         <div class="flex flex-col">
@@ -847,7 +847,7 @@
   </main>
 
   <!-- Global RFQ Modal -->
-  <div class="modal-backdrop fixed inset-0 z-50 bg-inverse-surface/75 backdrop-blur-md flex items-center justify-center p-space-md" id="global-rfq-modal">
+  <div class="modal-backdrop fixed inset-0 z-50 bg-inverse-surface/75 backdrop-blur-md hidden items-center justify-center p-space-md" id="global-rfq-modal">
     <div class="modal-content bg-surface-container-lowest rounded-xl max-w-2xl w-full p-space-xl shadow-2xl relative">
       <button class="absolute top-space-md right-space-md w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="close-rfq-modal" type="button">
         <span class="material-symbols-outlined text-[20px]">close</span>
