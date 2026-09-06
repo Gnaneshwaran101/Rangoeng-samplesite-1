@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Products | Industrial &amp; Environmental Test Chambers - Rango Engineering</title>
+  <meta name="description" content="High-precision environmental test chambers, cleanroom equipment, and custom automation hardware engineered to IEC 60068, MIL-STD 810G, DIN 40046, and ASTM B117."/>
+  
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- Base styling & Tailwind CDN -->
+  <style>
+    @layer base { 
+      html, body { margin: 0; padding: 0; } 
+      body { overscroll-behavior: none; } 
+      main > :first-child { margin-top: 0 !important; } 
+      main > :last-child { margin-bottom: 0 !important; } 
+    } 
+    ::-webkit-scrollbar { display: none; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = { 
+      darkMode: "class", 
+      theme: { 
+        extend: { 
+          colors: { 
+            "surface-container": "#f1ede6", 
+            "tertiary": "#002a43", 
+            "on-surface": "#1c1c18", 
+            "on-error": "#ffffff", 
+            "primary-fixed": "#ffdadb", 
+            "surface-container-high": "#ebe8e1", 
+            "surface-container-low": "#f7f3ec", 
+            "inverse-primary": "#ffb2b8", 
+            "secondary-container": "#e4e1e8", 
+            "surface-container-highest": "#e6e2db", 
+            "surface-variant": "#e6e2db", 
+            "error-container": "#ffdad6", 
+            "primary-fixed-dim": "#ffb2b8", 
+            "on-secondary-container": "#65646a", 
+            "on-secondary-fixed-variant": "#47464c", 
+            "inverse-on-surface": "#f4f0e9", 
+            "background": "#fdf9f2", 
+            "on-primary-fixed-variant": "#871c31", 
+            "on-background": "#1c1c18", 
+            "on-primary": "#ffffff", 
+            "tertiary-container": "#0c4160", 
+            "on-secondary-fixed": "#1b1b20", 
+            "primary-container": "#7a1128", 
+            "surface-bright": "#fdf9f2", 
+            "surface": "#fdf9f2", 
+            "on-tertiary-fixed": "#001e30", 
+            "primary": "#570016", 
+            "outline": "#8a7172", 
+            "inverse-surface": "#31302c", 
+            "on-error-container": "#93000a", 
+            "surface-tint": "#a73547", 
+            "surface-dim": "#dddad3", 
+            "error": "#ba1a1a", 
+            "outline-variant": "#ddbfc0", 
+            "surface-container-lowest": "#ffffff", 
+            "on-tertiary-container": "#82add2", 
+            "on-primary-container": "#ff828f", 
+            "secondary": "#5e5e64", 
+            "secondary-fixed": "#e4e1e8", 
+            "tertiary-fixed-dim": "#a0cbf1", 
+            "on-surface-variant": "#574143", 
+            "on-tertiary-fixed-variant": "#1a4a6a", 
+            "on-tertiary": "#ffffff", 
+            "on-primary-fixed": "#40000e", 
+            "on-secondary": "#ffffff", 
+            "tertiary-fixed": "#cbe6ff", 
+            "secondary-fixed-dim": "#c8c5cc" 
+          }, 
+          borderRadius: { 
+            "DEFAULT": "0.125rem", 
+            "lg": "0.25rem", 
+            "xl": "0.5rem", 
+            "full": "0.75rem" 
+          }, 
+          spacing: { 
+            "space-2xl": "3rem", 
+            "grid-margin-tablet": "2rem", 
+            "grid-margin-mobile": "1.25rem", 
+            "space-sm": "0.75rem", 
+            "space-xs": "0.5rem", 
+            "gutter-desktop": "2rem", 
+            "gutter-mobile": "1rem", 
+            "grid-margin-desktop": "4rem", 
+            "space-2xs": "0.25rem", 
+            "space-3xl": "5rem", 
+            "space-4xl": "7.5rem", 
+            "space-md": "1rem", 
+            "space-lg": "1.5rem", 
+            "space-xl": "2rem" 
+          }, 
+          fontFamily: { 
+            "eyebrow-technical": ["Space Grotesk", "sans-serif"], 
+            "body-sm": ["Inter", "sans-serif"], 
+            "data-mono": ["Inter", "monospace"], 
+            "label-btn": ["Space Grotesk", "sans-serif"], 
+            "headline-xl-mobile": ["Space Grotesk", "sans-serif"], 
+            "display-hero": ["Space Grotesk", "sans-serif"], 
+            "body-md": ["Inter", "sans-serif"], 
+            "body-lg": ["Inter", "sans-serif"], 
+            "display-hero-mobile": ["Space Grotesk", "sans-serif"], 
+            "headline-xl": ["Space Grotesk", "sans-serif"], 
+            "headline-lg": ["Space Grotesk", "sans-serif"], 
+            "spec-numeral": ["Space Grotesk", "sans-serif"], 
+            "headline-sm": ["Space Grotesk", "sans-serif"], 
+            "headline-md": ["Space Grotesk", "sans-serif"] 
+          }, 
+          fontSize: { 
+            "eyebrow-technical": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" }], 
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], 
+            "data-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], 
+            "label-btn": ["13px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "600" }], 
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], 
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], 
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], 
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], 
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], 
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], 
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], 
+            "spec-numeral": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], 
+            "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], 
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }] 
+          } 
+        } 
+      } 
+    };
+  </script>
+  
+  <!-- Custom Scroll Animations Stylesheet -->
+  <link rel="stylesheet" href="assets/css/animations.css"/>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+  <!-- Top hairline scroll progress bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 w-full bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="w-full bg-surface-container-high py-space-2xs px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop">
+      <div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between gap-space-xs">
+        <div class="flex items-center gap-space-md">
+          <span class="inline-flex items-center gap-space-2xs text-tertiary font-eyebrow-technical text-eyebrow-technical uppercase tracking-wider">
+            <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>ISO 9001:2015 CERTIFIED
+          </span>
+          <span class="hidden sm:inline-flex items-center gap-space-2xs text-secondary font-data-mono text-data-mono">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>GST COMPLIANT (GSTIN: 27AABCR1234F1Z5)
+          </span>
+        </div>
+        <div class="flex items-center gap-space-lg">
+          <span class="text-secondary font-data-mono text-data-mono hidden md:inline">SUPPORT: PAN INDIA INDUSTRIAL NETWORK</span>
+          <a class="text-primary font-eyebrow-technical text-eyebrow-technical uppercase tracking-wider hover:text-on-primary-fixed-variant transition-colors" href="contact.html">QUICK INQUIRY HOTLINE →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-20 w-full px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop flex items-center justify-between max-w-[1440px] mx-auto">
+      <a href="index.html" class="flex items-center gap-space-md focus:outline-none">
+        <img alt="Rango Engineering Solutions Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WAp39gKFpWuUeu13vp-Odwo4dvXwsNJjRllAJKphOp8KTyPDM6sJAHJWy1cl00hyeQGtBwjN6dE7EaiDbK4ZKn-b9uPcC8QwqiXTONI8hx7Jnuh758bUkhxX2DEpHlxaV3wW7rW4YB8kIncIuxoQgn8xpCbOrySyMNq9d_7MrCm_B2Z2g3F96P19JVRTkcmE6nO5IhRx4nPM_hCBLJwoAEqZEb50KwGZd1ZjBpcokO97z5TnTCjZCwPYLn"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-bold leading-none">Rango</span>
+          <span class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase tracking-widest mt-0.5">Engineering Solutions</span>
+        </div>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded">
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="home" href="index.html">Home</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="about-us" href="about.html">About Us</a>
+        <a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-bold rounded" data-path="products" href="products.html">Products</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="services" href="services.html">Services</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="projects" href="projects.html">Projects</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="clients" href="index.html#clients">Clients</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="contact" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-space-md">
+        <div class="hidden lg:flex flex-col text-right">
+          <span class="font-data-mono text-data-mono text-on-surface font-semibold">+91 98765 43210</span>
+          <span class="font-data-mono text-data-mono text-secondary">sales@rangoeng.com</span>
+        </div>
+        <button class="inline-flex items-center gap-space-2xs bg-primary-container text-on-primary font-label-btn text-label-btn uppercase px-space-lg py-space-sm rounded shadow-[0_1px_8px_rgba(0,0,0,0.04)] hover:bg-primary transition-all cursor-pointer" data-open-rfq type="button">
+          <span>Get a Quote</span>
+        </button>
+        <button aria-label="Open Navigation Menu" class="xl:hidden w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="mobile-menu-btn" type="button">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 hidden transition-opacity" id="mobile-drawer-backdrop"></div>
+  <div class="fixed top-0 right-0 bottom-0 w-[300px] sm:w-[340px] bg-surface-container-lowest z-50 shadow-2xl p-space-lg flex flex-col justify-between" id="mobile-drawer">
+    <div class="flex flex-col gap-space-lg">
+      <div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm font-bold uppercase text-on-surface">Rango</span>
+          <span class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase">Plant Systems</span>
+        </div>
+        <button aria-label="Close Drawer" class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="close-drawer-btn" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-1">
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="index.html">Home</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="about.html">About Us</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase bg-primary-container text-on-primary font-bold" href="products.html">Products</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="services.html">Services</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="projects.html">Projects</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="index.html#clients">Clients</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="flex flex-col gap-space-sm pt-space-md border-t border-surface-container">
+      <button class="w-full bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-sm rounded shadow-md text-center" data-open-rfq type="button">
+        Submit Rapid RFQ
+      </button>
+    </div>
+  </div>
+
+  <main class="w-full pt-20 bg-background min-h-screen">
+    <div class="flex flex-col w-full">
+      <!-- Technical Blueprint Sub-Header Bar -->
+      <section class="w-full bg-surface-container-high py-space-sm px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop">
+        <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+          <div class="flex items-center gap-space-xs text-on-surface-variant font-data-mono text-data-mono flex-wrap">
+            <a class="hover:text-primary transition-colors" data-path="home" href="index.html">PLANT SYS</a>
+            <span>/</span>
+            <a class="text-on-surface font-semibold" data-path="products" href="products.html">CATALOG 2025</a>
+            <span>/</span>
+            <span class="text-tertiary font-bold tracking-wider uppercase">ENVIRONMENTAL &amp; INDUSTRIAL TESTING</span>
+          </div>
+          <div class="flex items-center gap-space-md text-data-mono font-data-mono">
+            <span class="inline-flex items-center gap-space-2xs bg-surface-container-lowest px-space-xs py-space-2xs rounded shadow-sm text-tertiary font-medium">
+              <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> ACTIVE RFQ QUEUE: ONLINE
+            </span>
+            <span class="hidden lg:inline text-secondary">NABL TRACEABLE CALIBRATION SPECIFIED</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero Header Section -->
+      <section class="w-full bg-surface-container-lowest py-space-xl lg:py-space-2xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop shadow-sm">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end">
+          <div class="lg:col-span-8 flex flex-col gap-space-xs reveal-left">
+            <div class="flex items-center gap-space-xs">
+              <span class="bg-primary-container text-on-primary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-space-2xs rounded">
+                MIL-STD &amp; IEC COMPLIANT
+              </span>
+              <span class="text-secondary font-data-mono text-data-mono">DOCUMENT: RG-CAT-ENV-REV9</span>
+            </div>
+            <h1 class="font-headline-xl text-headline-xl text-on-surface uppercase tracking-tight font-bold">
+              INDUSTRIAL &amp; LABORATORY PRODUCTS
+            </h1>
+            <p class="font-body-lg text-body-lg text-secondary max-w-3xl">
+              High-precision environmental test chambers, cleanroom equipment, and custom automation hardware engineered to rigorous international testing standards including IEC 60068, MIL-STD 810G, DIN 40046, and ASTM B117.
+            </p>
+          </div>
+          <!-- Quick Metrics Strip with Animated Counters -->
+          <div class="lg:col-span-4 grid grid-cols-3 gap-space-xs bg-surface-container p-space-sm rounded reveal-right">
+            <div class="flex flex-col">
+              <span class="font-spec-numeral text-spec-numeral text-primary font-bold leading-none" data-counter="64" data-suffix="+">64+</span>
+              <span class="font-data-mono text-data-mono text-secondary uppercase mt-1">Base Models</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-spec-numeral text-spec-numeral text-tertiary font-bold leading-none" data-counter="0.3" data-prefix="±" data-suffix="°C" data-decimals="1">±0.3°C</span>
+              <span class="font-data-mono text-data-mono text-secondary uppercase mt-1">Thermal Stability</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-spec-numeral text-spec-numeral text-on-surface font-bold leading-none" data-counter="99.8" data-suffix="%" data-decimals="1">99.8%</span>
+              <span class="font-data-mono text-data-mono text-secondary uppercase mt-1">Uptime Rate</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Catalog Architecture: Sidebar + Product Grid -->
+      <section class="w-full py-space-2xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+          
+          <!-- Left Sidebar: Technical Taxonomy & Filtration -->
+          <aside class="lg:col-span-4 xl:col-span-3 flex flex-col gap-space-lg sticky top-28">
+            <!-- Category Tree Box -->
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-space-md reveal-left">
+              <div class="flex items-center justify-between pb-space-2xs bg-surface-container-high px-space-xs py-space-2xs rounded">
+                <span class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface flex items-center gap-space-2xs">
+                  <span class="material-symbols-outlined text-primary text-[18px]">folder_open</span> Categories
+                </span>
+                <span class="font-data-mono text-data-mono text-secondary uppercase">SYS TREE</span>
+              </div>
+              <nav class="flex flex-col gap-space-2xs font-body-sm text-body-sm" id="category-nav">
+                <!-- Active Primary Group -->
+                <div class="flex flex-col gap-space-2xs bg-surface-container-low p-space-xs rounded">
+                  <div class="flex items-center justify-between font-headline-sm text-headline-sm text-primary font-bold cursor-pointer">
+                    <span class="flex items-center gap-space-2xs">
+                      <span class="material-symbols-outlined text-[16px]">thermostat</span>
+                      Environmental Chambers
+                    </span>
+                    <span class="bg-primary-container text-on-primary text-eyebrow-technical font-eyebrow-technical px-space-2xs py-0.5 rounded">24</span>
+                  </div>
+                  <!-- Subcategory indentation -->
+                  <div class="pl-space-md pt-space-2xs flex flex-col gap-1.5 font-data-mono text-data-mono">
+                    <a class="flex items-center justify-between text-on-surface hover:text-primary font-semibold py-1 bg-surface-container-highest px-space-xs rounded transition-colors" data-category="all" href="#all">
+                      <span>• All Categories</span>
+                      <span class="text-secondary">(6)</span>
+                    </a>
+                    <a class="flex items-center justify-between text-on-surface-variant hover:text-primary py-1 px-space-xs rounded transition-colors" data-category="climatic" href="#rh-series">
+                      <span>• Temp &amp; Humidity (RH)</span>
+                      <span class="text-secondary">(8)</span>
+                    </a>
+                    <a class="flex items-center justify-between text-on-surface-variant hover:text-primary py-1 px-space-xs rounded transition-colors" data-category="shock" href="#ts-series">
+                      <span>• Thermal Shock (TS)</span>
+                      <span class="text-secondary">(4)</span>
+                    </a>
+                    <a class="flex items-center justify-between text-on-surface-variant hover:text-primary py-1 px-space-xs rounded transition-colors" data-category="walkin" href="#wic-series">
+                      <span>• Walk-in Climatic Rooms</span>
+                      <span class="text-secondary">(3)</span>
+                    </a>
+                    <a class="flex items-center justify-between text-on-surface-variant hover:text-primary py-1 px-space-xs rounded transition-colors" data-category="corrosion" href="#ssc-series">
+                      <span>• Salt Spray &amp; Corrosion</span>
+                      <span class="text-secondary">(4)</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Other Divisions -->
+                <a class="flex items-center justify-between p-space-xs rounded hover:bg-surface-container transition-colors text-on-surface font-medium" data-category="cleanrooms" href="#cleanrooms">
+                  <span class="flex items-center gap-space-2xs">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">clean_hands</span>
+                    Modular Cleanrooms
+                  </span>
+                  <span class="text-secondary font-data-mono text-data-mono">12</span>
+                </a>
+                <a class="flex items-center justify-between p-space-xs rounded hover:bg-surface-container transition-colors text-on-surface font-medium" data-category="automation" href="#automation">
+                  <span class="flex items-center gap-space-2xs">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">precision_manufacturing</span>
+                    Factory Automation
+                  </span>
+                  <span class="text-secondary font-data-mono text-data-mono">9</span>
+                </a>
+                <a class="flex items-center justify-between p-space-xs rounded hover:bg-surface-container transition-colors text-on-surface font-medium" href="services.html#service-fab">
+                  <span class="flex items-center gap-space-2xs">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">inventory_2</span>
+                    Custom SS Enclosures
+                  </span>
+                  <span class="text-secondary font-data-mono text-data-mono">15</span>
+                </a>
+                <a class="flex items-center justify-between p-space-xs rounded hover:bg-surface-container transition-colors text-on-surface font-medium" href="services.html#service-fea">
+                  <span class="flex items-center gap-space-2xs">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">view_in_ar</span>
+                    2D/3D CFD &amp; Thermal
+                  </span>
+                  <span class="text-secondary font-data-mono text-data-mono">Eng</span>
+                </a>
+              </nav>
+            </div>
+
+            <!-- Parametric Engineering Filters Card -->
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-space-md reveal-left delay-100">
+              <div class="flex items-center justify-between pb-space-2xs bg-surface-container-high px-space-xs py-space-2xs rounded">
+                <span class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface flex items-center gap-space-2xs">
+                  <span class="material-symbols-outlined text-primary text-[18px]">tune</span> Parametric Filters
+                </span>
+                <button class="text-primary font-eyebrow-technical text-eyebrow-technical uppercase hover:underline cursor-pointer" id="reset-filters" type="button">RESET</button>
+              </div>
+
+              <!-- Filter Group: Thermal Range -->
+              <div class="flex flex-col gap-space-2xs">
+                <label class="font-label-btn text-label-btn uppercase text-on-surface">Thermal Envelope</label>
+                <div class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+                  <label class="flex items-center gap-space-xs cursor-pointer hover:text-on-surface">
+                    <input checked="" class="w-4 h-4 rounded bg-surface-container accent-primary-container" type="checkbox"/>
+                    <span class="font-data-mono text-data-mono">-70°C to +180°C (Ultra-Low)</span>
+                  </label>
+                  <label class="flex items-center gap-space-xs cursor-pointer hover:text-on-surface">
+                    <input checked="" class="w-4 h-4 rounded bg-surface-container accent-primary-container" type="checkbox"/>
+                    <span class="font-data-mono text-data-mono">-40°C to +150°C (Cryo Dwell)</span>
+                  </label>
+                  <label class="flex items-center gap-space-xs cursor-pointer hover:text-on-surface">
+                    <input class="w-4 h-4 rounded bg-surface-container accent-primary-container" type="checkbox"/>
+                    <span class="font-data-mono text-data-mono">Ambient to +300°C (High Bake)</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Filter Group: Workspace Volume -->
+              <div class="flex flex-col gap-space-2xs">
+                <label class="font-label-btn text-label-btn uppercase text-on-surface">Workspace Capacity (Litres)</label>
+                <div class="grid grid-cols-2 gap-space-xs font-data-mono text-data-mono">
+                  <button class="px-space-xs py-1.5 rounded bg-surface-container-high text-on-surface font-semibold text-center hover:bg-surface-variant transition-colors" type="button">100L - 250L</button>
+                  <button class="px-space-xs py-1.5 rounded bg-primary-container text-on-primary font-semibold text-center transition-colors" type="button">500L - 1000L</button>
+                  <button class="px-space-xs py-1.5 rounded bg-surface-container-high text-on-surface font-semibold text-center hover:bg-surface-variant transition-colors" type="button">1000L - 3000L</button>
+                  <button class="px-space-xs py-1.5 rounded bg-surface-container-high text-on-surface font-semibold text-center hover:bg-surface-variant transition-colors" type="button">&gt; 5000L (Room)</button>
+                </div>
+              </div>
+
+              <!-- Filter Group: Standards Met -->
+              <div class="flex flex-col gap-space-2xs">
+                <label class="font-label-btn text-label-btn uppercase text-on-surface">Validation Standards</label>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="bg-tertiary-container text-on-tertiary-container font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-1 rounded cursor-pointer">IEC 60068</span>
+                  <span class="bg-surface-container text-secondary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-1 rounded cursor-pointer hover:bg-surface-container-high">MIL-STD 810G</span>
+                  <span class="bg-surface-container text-secondary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-1 rounded cursor-pointer hover:bg-surface-container-high">ASTM B117</span>
+                  <span class="bg-surface-container text-secondary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-1 rounded cursor-pointer hover:bg-surface-container-high">DIN 40046</span>
+                </div>
+              </div>
+
+              <!-- Quick Sizing Assistance -->
+              <div class="p-space-sm bg-surface-container rounded flex flex-col gap-space-2xs mt-space-xs">
+                <span class="font-headline-sm text-headline-sm text-tertiary font-bold flex items-center gap-space-2xs">
+                  <span class="material-symbols-outlined text-[16px]">contact_support</span> Need Chamber Sizing?
+                </span>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Calculate required thermal ramp wattage based on your test payload weight and heat dissipation.
+                </p>
+                <a class="font-eyebrow-technical text-eyebrow-technical text-primary font-bold uppercase mt-1 inline-flex items-center gap-1 hover:underline" href="contact.html">
+                  Launch Thermal Calculator →
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Right Main Content: Equipment Showcase Grid & Model Switcher -->
+          <main class="lg:col-span-8 xl:col-span-9 flex flex-col gap-space-xl">
+            <!-- Top Catalog Filter Status & View Controls -->
+            <div class="bg-surface-container-lowest p-space-sm rounded shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm reveal-on-scroll">
+              <div class="flex items-center gap-space-sm flex-wrap">
+                <span class="font-data-mono text-data-mono font-bold text-on-surface" id="active-filter-label">DISPLAYING: 6 ENTERPRISE SERIES</span>
+                <span class="hidden md:inline text-secondary font-data-mono text-data-mono">|</span>
+                <span class="inline-flex items-center gap-1 font-eyebrow-technical text-eyebrow-technical text-primary bg-primary-container/10 px-2 py-0.5 rounded">
+                  <span>FILTER: MIL-STD / IEC CERTIFIED</span>
+                </span>
+              </div>
+              <div class="flex items-center gap-space-md self-end sm:self-auto font-data-mono text-data-mono">
+                <!-- Model View Switcher Buttons -->
+                <div class="inline-flex rounded border border-surface-container-high p-0.5 bg-surface-container-low">
+                  <button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-data-mono text-[11px] font-bold flex items-center gap-1 transition-colors cursor-pointer" id="view-grid-btn" title="Card Grid View" type="button">
+                    <span class="material-symbols-outlined text-[14px]">grid_view</span>
+                    <span class="hidden sm:inline">Grid</span>
+                  </button>
+                  <button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-data-mono text-[11px] font-bold flex items-center gap-1 transition-colors cursor-pointer" id="view-matrix-btn" title="Technical Spec Matrix View" type="button">
+                    <span class="material-symbols-outlined text-[14px]">table_rows</span>
+                    <span class="hidden sm:inline">Matrix</span>
+                  </button>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <span class="text-secondary uppercase text-[11px]">SORT:</span>
+                  <select class="bg-surface-container text-on-surface font-data-mono text-data-mono px-space-xs py-1 rounded focus:outline-none focus:ring-1 focus:ring-primary">
+                    <option>Thermal Range (Extremes First)</option>
+                    <option>Chamber Capacity (High to Low)</option>
+                    <option>Popularity / Enterprise Demand</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- VIEW MODE 1: Product Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg" id="product-cards-grid">
+              
+              <!-- Product Card 1: RH Series Climatic Test Chamber -->
+              <article class="bg-surface-container-lowest rounded shadow-sm hover-lift flex flex-col justify-between group overflow-hidden reveal-on-scroll" data-category="climatic" id="rh-series">
+                <div>
+                  <div class="bg-surface-container-high px-space-md py-space-xs flex items-center justify-between">
+                    <span class="font-data-mono text-data-mono font-bold text-primary tracking-wider uppercase">SERIES: RG-RH-1000</span>
+                    <span class="font-eyebrow-technical text-eyebrow-technical text-secondary bg-surface-container px-2 py-0.5 rounded">FLAGSHIP RH RIG</span>
+                  </div>
+                  <div class="relative h-64 w-full overflow-hidden bg-surface-container cursor-pointer" data-inspect-model="rh-series">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stainless steel environmental climatic test chamber" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOlRURXpmdhC8GFwaEeuFSWi98CEVtSBsDJ4c1FB0ehwNP-WNz-pPBMlLuqSQYdZvPu5D3woN7eu0m85aJrCeOfEjGjdqD3jWADR60hpPQnqgQuwlPi6WsAnMMYC2Q77fO0NLlrf9f4H7uqGGHIFyryv5_QEYDzlxltAaoHvq-vtUxDn_UIlaR7qWvBkXQxbK_KpIPRzLYpAEnrvl4CsWsmLMr6b7yh1pnKYmiTkhPH3E9zA-WaCrWAA"/>
+                    <div class="absolute top-space-xs left-space-xs flex flex-wrap gap-1">
+                      <span class="bg-primary text-on-primary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">IEC 60068-2</span>
+                      <span class="bg-surface-container-lowest/90 text-on-surface font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">NABL RECOG</span>
+                    </div>
+                    <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span class="bg-surface-container-lowest text-on-surface px-space-sm py-1 rounded font-label-btn text-label-btn uppercase shadow-lg flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[16px]">visibility</span>
+                        <span>Inspect CAD Model</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="p-space-md flex flex-col gap-space-sm">
+                    <div class="flex flex-col">
+                      <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-tertiary">Climatic Conditioning</span>
+                      <h3 class="font-headline-md text-headline-md text-on-surface font-bold">RH-Series Temperature &amp; Humidity Test Chamber</h3>
+                      <p class="font-body-sm text-body-sm text-secondary mt-1">
+                        Precision cyclic climatic test environment featuring hermetic scroll compressors and electromagnetic steam injection for ultra-stable psychrometric control.
+                      </p>
+                    </div>
+                    <div class="bg-surface-container-low p-space-sm rounded grid grid-cols-2 gap-space-xs font-data-mono text-data-mono">
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">TEMP ENVELOPE:</span>
+                        <span class="text-on-surface font-semibold">-70°C to +180°C</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">HUMIDITY RANGE:</span>
+                        <span class="text-on-surface font-semibold">10% to 98% RH</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">RAMP RATE:</span>
+                        <span class="text-on-surface font-semibold">3.0°C / min (Heat/Cool)</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">TEST VOLUME:</span>
+                        <span class="text-on-surface font-semibold">250L to 1,500L</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-space-xs font-data-mono text-data-mono text-secondary">
+                      <span class="material-symbols-outlined text-tertiary text-[16px]">touch_app</span>
+                      <span>7" Multi-touch HMI with USB Data Logging</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-space-md pt-0 flex flex-col sm:flex-row items-center gap-space-xs">
+                  <button class="w-full sm:flex-1 bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-xs text-center rounded hover:bg-primary transition-colors flex items-center justify-center gap-1 cursor-pointer" data-open-rfq data-prefill-model="RH-Series Climatic Chamber" type="button">
+                    <span>Enquire Now</span>
+                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  </button>
+                  <button class="w-full sm:w-auto bg-surface-container-high text-on-surface font-label-btn text-label-btn uppercase px-space-sm py-space-xs rounded hover:bg-surface-variant transition-colors flex items-center justify-center gap-1 cursor-pointer" data-inspect-model="rh-series" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-primary">view_in_ar</span>
+                    <span>Inspect</span>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Product Card 2: TS Series Three-Zone Thermal Shock Chamber -->
+              <article class="bg-surface-container-lowest rounded shadow-sm hover-lift flex flex-col justify-between group overflow-hidden reveal-on-scroll delay-100" data-category="shock" id="ts-series">
+                <div>
+                  <div class="bg-surface-container-high px-space-md py-space-xs flex items-center justify-between">
+                    <span class="font-data-mono text-data-mono font-bold text-primary tracking-wider uppercase">SERIES: RG-TS-3ZONE</span>
+                    <span class="font-eyebrow-technical text-eyebrow-technical text-on-primary-fixed-variant bg-primary-fixed px-2 py-0.5 rounded font-bold">MIL-STD 810G</span>
+                  </div>
+                  <div class="relative h-64 w-full overflow-hidden bg-surface-container cursor-pointer" data-inspect-model="ts-series">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heavy duty vertical elevator thermal shock test chamber" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAupvINsrKb3o_LSqdIhxTTE7IZzK8vsifydGJw-gw5ipHQhK-TCdLs9qiI93ychL2YJ3Hm_PrPqRNhK9cqE3v-7DTT_85p9x2_kccQhPXKoOzhbUuMR3w5PPrjsUW9aWuWcHsL54qeFtUnyUZjt8s9ZoJDj2D_Sv9OgiTDcOVhtY-tOLP_s4dqiaIylhP9s6zQwwyKH6gALUrKDRY-77mGJxJKGUVNhy65EA6WN9AlijgM44RzbhMxoQ"/>
+                    <div class="absolute top-space-xs left-space-xs flex flex-wrap gap-1">
+                      <span class="bg-tertiary text-on-tertiary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">PNEUMATIC BASKET</span>
+                      <span class="bg-surface-container-lowest/90 text-on-surface font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">&lt;10 SEC TRANSIT</span>
+                    </div>
+                    <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span class="bg-surface-container-lowest text-on-surface px-space-sm py-1 rounded font-label-btn text-label-btn uppercase shadow-lg flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[16px]">visibility</span>
+                        <span>Inspect CAD Model</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="p-space-md flex flex-col gap-space-sm">
+                    <div class="flex flex-col">
+                      <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-tertiary">Rapid Stress Screening</span>
+                      <h3 class="font-headline-md text-headline-md text-on-surface font-bold">TS-Series Three-Zone Thermal Shock Chamber</h3>
+                      <p class="font-body-sm text-body-sm text-secondary mt-1">
+                        Engineered for extreme electronic stress screening (ESS). Features independent hot zone, ambient dwell zone, and cascade liquid nitrogen chilled cold zone.
+                      </p>
+                    </div>
+                    <div class="bg-surface-container-low p-space-sm rounded grid grid-cols-2 gap-space-xs font-data-mono text-data-mono">
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">HOT ZONE TEMP:</span>
+                        <span class="text-on-surface font-semibold">+60°C to +200°C</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">COLD ZONE TEMP:</span>
+                        <span class="text-on-surface font-semibold">-75°C to -10°C</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">TRANSIT RECOVERY:</span>
+                        <span class="text-on-surface font-semibold">&lt; 5 min (MIL-STD)</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">BASKET LOAD:</span>
+                        <span class="text-on-surface font-semibold">50 kg Pneumatic Travel</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-space-xs font-data-mono text-data-mono text-secondary">
+                      <span class="material-symbols-outlined text-tertiary text-[16px]">speed</span>
+                      <span>High-speed pneumatic actuator with zero-vibration guide rails</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-space-md pt-0 flex flex-col sm:flex-row items-center gap-space-xs">
+                  <button class="w-full sm:flex-1 bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-xs text-center rounded hover:bg-primary transition-colors flex items-center justify-center gap-1 cursor-pointer" data-open-rfq data-prefill-model="TS-Series Thermal Shock" type="button">
+                    <span>Enquire Now</span>
+                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  </button>
+                  <button class="w-full sm:w-auto bg-surface-container-high text-on-surface font-label-btn text-label-btn uppercase px-space-sm py-space-xs rounded hover:bg-surface-variant transition-colors flex items-center justify-center gap-1 cursor-pointer" data-inspect-model="ts-series" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-primary">view_in_ar</span>
+                    <span>Inspect</span>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Product Card 3: WIC-Pro Walk-in Climatic Chamber -->
+              <article class="bg-surface-container-lowest rounded shadow-sm hover-lift flex flex-col justify-between group overflow-hidden reveal-on-scroll" data-category="walkin" id="wic-series">
+                <div>
+                  <div class="bg-surface-container-high px-space-md py-space-xs flex items-center justify-between">
+                    <span class="font-data-mono text-data-mono font-bold text-primary tracking-wider uppercase">SERIES: RG-WIC-ROOM</span>
+                    <span class="font-eyebrow-technical text-eyebrow-technical text-secondary bg-surface-container px-2 py-0.5 rounded">CUSTOM SITE BUILD</span>
+                  </div>
+                  <div class="relative h-64 w-full overflow-hidden bg-surface-container cursor-pointer" data-inspect-model="wic-series">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Industrial technician in safety vest inspecting EV battery packs inside walk-in chamber" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBDHW5EqUflmUGp9fvKO-YLDxMG17CuBRlTSR1-h2rJfHsVEm0WkZEed_TsuN6GZqRvFUu2wz1QsfSHJA1mQT8TGeMzrWpbNhVBxXvR8VmCvQRuiu_dI3lQKdKVndWRKwZK3p0PeJBXNdr_9-2poZkXcHi8UyPNpFRxg5cdx9ir_xe8vWrxrjPjbfb3WNpzJpeJT6mkOJj9l2LXcDEkW4cyFUBgBZ7eu1ih9xgFx_rN9wxlBdILbooJQ"/>
+                    <div class="absolute top-space-xs left-space-xs flex flex-wrap gap-1">
+                      <span class="bg-tertiary-container text-on-tertiary-container font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">EV BATTERY TEST READY</span>
+                      <span class="bg-surface-container-lowest/90 text-on-surface font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">MODULAR CAM-LOCK</span>
+                    </div>
+                  </div>
+                  <div class="p-space-md flex flex-col gap-space-sm">
+                    <div class="flex flex-col">
+                      <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-tertiary">Large Scale Validation</span>
+                      <h3 class="font-headline-md text-headline-md text-on-surface font-bold">WIC-Pro Walk-in Climatic Chamber</h3>
+                      <p class="font-body-sm text-body-sm text-secondary mt-1">
+                        Heavy-duty walk-in and drive-in environmental rooms engineered with modular polyurethane insulated sandwich panels and reinforced stainless anti-slip flooring.
+                      </p>
+                    </div>
+                    <div class="bg-surface-container-low p-space-sm rounded grid grid-cols-2 gap-space-xs font-data-mono text-data-mono">
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">TEMP RANGE:</span>
+                        <span class="text-on-surface font-semibold">-50°C to +120°C</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">HUMIDITY RANGE:</span>
+                        <span class="text-on-surface font-semibold">20% to 95% RH</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">FLOOR CAPACITY:</span>
+                        <span class="text-on-surface font-semibold">Up to 3,000 kg / m²</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">VOLUME CAP:</span>
+                        <span class="text-on-surface font-semibold">8 m³ to 120 m³ Custom</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-space-xs font-data-mono text-data-mono text-secondary">
+                      <span class="material-symbols-outlined text-tertiary text-[16px]">shield</span>
+                      <span>Integrated explosive gas detection &amp; ATEX certified ventilation exhaust</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-space-md pt-0 flex flex-col sm:flex-row items-center gap-space-xs">
+                  <button class="w-full sm:flex-1 bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-xs text-center rounded hover:bg-primary transition-colors flex items-center justify-center gap-1 cursor-pointer" data-open-rfq data-prefill-model="WIC-Pro Walk-in Chamber" type="button">
+                    <span>Enquire Now</span>
+                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  </button>
+                  <button class="w-full sm:w-auto bg-surface-container-high text-on-surface font-label-btn text-label-btn uppercase px-space-sm py-space-xs rounded hover:bg-surface-variant transition-colors flex items-center justify-center gap-1 cursor-pointer" data-inspect-model="wic-series" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-primary">view_in_ar</span>
+                    <span>Inspect</span>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Product Card 4: SSC-Series Salt Spray Fog Chamber -->
+              <article class="bg-surface-container-lowest rounded shadow-sm hover-lift flex flex-col justify-between group overflow-hidden reveal-on-scroll delay-100" data-category="corrosion" id="ssc-series">
+                <div>
+                  <div class="bg-surface-container-high px-space-md py-space-xs flex items-center justify-between">
+                    <span class="font-data-mono text-data-mono font-bold text-primary tracking-wider uppercase">SERIES: RG-SSC-600</span>
+                    <span class="font-eyebrow-technical text-eyebrow-technical text-secondary bg-surface-container px-2 py-0.5 rounded">CORROSION LAB</span>
+                  </div>
+                  <div class="relative h-64 w-full overflow-hidden bg-surface-container cursor-pointer" data-inspect-model="ssc-series">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Salt spray corrosion test chamber with saline mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9yp0LXZZ2RRLYdO0G_VsGDisWLhUUsTvFxNzOMkefDBUJB3pDS-y7WFc0yH4YOaSwtKIKd_YBWE4RBwxA-4WUuxCqzD1waO6Oi95Ina37kAgBM9iwsY75EG1UCwMiBgfJoIhFyuOOw2__7VTgBYoc2m7f0xOXaMm7oe313obBZ3O4XlspD_khJlmulf1FzrFGdL8UOK2hKS_l8oTk2PuMVmoSHbfjCxi5etDG83g4f4KFBATCFwEw8Q"/>
+                    <div class="absolute top-space-xs left-space-xs flex flex-wrap gap-1">
+                      <span class="bg-primary text-on-primary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">ASTM B117</span>
+                      <span class="bg-surface-container-lowest/90 text-on-surface font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">CYCLIC (CCT) READY</span>
+                    </div>
+                  </div>
+                  <div class="p-space-md flex flex-col gap-space-sm">
+                    <div class="flex flex-col">
+                      <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-tertiary">Corrosion Testing</span>
+                      <h3 class="font-headline-md text-headline-md text-on-surface font-bold">SSC-Series Salt Spray Fog Chamber</h3>
+                      <p class="font-body-sm text-body-sm text-secondary mt-1">
+                        Continuous saline mist and cyclic corrosion chamber constructed with non-metallic fiberglass reinforced plastic (FRP) and precision Lucite spray nozzles.
+                      </p>
+                    </div>
+                    <div class="bg-surface-container-low p-space-sm rounded grid grid-cols-2 gap-space-xs font-data-mono text-data-mono">
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">CHAMBER TEMP:</span>
+                        <span class="text-on-surface font-semibold">Ambient to +55°C ±0.5°C</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">SATURATOR TEMP:</span>
+                        <span class="text-on-surface font-semibold">+47°C to +63°C</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">COLLECTION RATE:</span>
+                        <span class="text-on-surface font-semibold">1.0 to 2.0 ml/80cm²/hr</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">VOLUMES:</span>
+                        <span class="text-on-surface font-semibold">250L / 600L / 1200L</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-space-xs font-data-mono text-data-mono text-secondary">
+                      <span class="material-symbols-outlined text-tertiary text-[16px]">water_drop</span>
+                      <span>Uniform mist distribution baffle preventing direct specimen droplet fall</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-space-md pt-0 flex flex-col sm:flex-row items-center gap-space-xs">
+                  <button class="w-full sm:flex-1 bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-xs text-center rounded hover:bg-primary transition-colors flex items-center justify-center gap-1 cursor-pointer" data-open-rfq data-prefill-model="SSC-Series Salt Spray" type="button">
+                    <span>Enquire Now</span>
+                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  </button>
+                  <button class="w-full sm:w-auto bg-surface-container-high text-on-surface font-label-btn text-label-btn uppercase px-space-sm py-space-xs rounded hover:bg-surface-variant transition-colors flex items-center justify-center gap-1 cursor-pointer" data-inspect-model="ssc-series" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-primary">view_in_ar</span>
+                    <span>Inspect</span>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Product Card 5: IND-Robotics Automated Testing Cell -->
+              <article class="bg-surface-container-lowest rounded shadow-sm hover-lift flex flex-col justify-between group overflow-hidden reveal-on-scroll" data-category="automation" id="automation">
+                <div>
+                  <div class="bg-surface-container-high px-space-md py-space-xs flex items-center justify-between">
+                    <span class="font-data-mono text-data-mono font-bold text-primary tracking-wider uppercase">SERIES: RG-ROBO-QC</span>
+                    <span class="font-eyebrow-technical text-eyebrow-technical text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded font-bold">SMART FACTORY 4.0</span>
+                  </div>
+                  <div class="relative h-64 w-full overflow-hidden bg-surface-container cursor-pointer" data-inspect-model="automation">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Industrial 6-axis robotic arm executing high-precision inspection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMmemw-QLPQ36dcPCiHKpgCYBAjdslET7vMbM4cJT3GWuLOdfFvXWAiwsU9UzxLZvt7l87LKvraWhEEDHvHhK8s_ET-N98X4Z-LtStcXiwO623ixoQs_DEq-j3FoFDdsAdLMzKCukKY_9rIacHZF1CtlVXY9Ga_xk_-dEfn7AVG9n4waZVixJkUUuW-ZmPv4sfMgf8C-wRiX09om4uJD31SVpm-vTZN-YnMTI1CmEEd7ojRhbNVnhbMA"/>
+                    <div class="absolute top-space-xs left-space-xs flex flex-wrap gap-1">
+                      <span class="bg-primary text-on-primary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">6-AXIS KINEMATICS</span>
+                      <span class="bg-surface-container-lowest/90 text-on-surface font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">PLC INTEGRATED</span>
+                    </div>
+                  </div>
+                  <div class="p-space-md flex flex-col gap-space-sm">
+                    <div class="flex flex-col">
+                      <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-tertiary">Industrial Robotics</span>
+                      <h3 class="font-headline-md text-headline-md text-on-surface font-bold">IND-Robotics Automated Testing Cell</h3>
+                      <p class="font-body-sm text-body-sm text-secondary mt-1">
+                        Turnkey robotic load/unload and automatic parameter inspection cells built for 24/7 continuous high-throughput manufacturing lines and batch burn-in.
+                      </p>
+                    </div>
+                    <div class="bg-surface-container-low p-space-sm rounded grid grid-cols-2 gap-space-xs font-data-mono text-data-mono">
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">PAYLOAD CAP:</span>
+                        <span class="text-on-surface font-semibold">10 kg to 60 kg Wrist</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">REPEATABILITY:</span>
+                        <span class="text-on-surface font-semibold">±0.02 mm Positional</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">BUS INTERFACE:</span>
+                        <span class="text-on-surface font-semibold">Profinet, EtherCAT</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">SAFETY LEVEL:</span>
+                        <span class="text-on-surface font-semibold">SIL 3 / Ple Guard</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-space-xs font-data-mono text-data-mono text-secondary">
+                      <span class="material-symbols-outlined text-tertiary text-[16px]">sensors</span>
+                      <span>Integrated machine vision inspection for orientation &amp; barcode indexing</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-space-md pt-0 flex flex-col sm:flex-row items-center gap-space-xs">
+                  <button class="w-full sm:flex-1 bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-xs text-center rounded hover:bg-primary transition-colors flex items-center justify-center gap-1 cursor-pointer" data-open-rfq data-prefill-model="IND-Robotics Test Cell" type="button">
+                    <span>Enquire Now</span>
+                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  </button>
+                  <button class="w-full sm:w-auto bg-surface-container-high text-on-surface font-label-btn text-label-btn uppercase px-space-sm py-space-xs rounded hover:bg-surface-variant transition-colors flex items-center justify-center gap-1 cursor-pointer" data-inspect-model="automation" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-primary">view_in_ar</span>
+                    <span>Inspect</span>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Product Card 6: MOD-Lab Cleanroom Modular Casework -->
+              <article class="bg-surface-container-lowest rounded shadow-sm hover-lift flex flex-col justify-between group overflow-hidden reveal-on-scroll delay-100" data-category="cleanrooms" id="cleanrooms">
+                <div>
+                  <div class="bg-surface-container-high px-space-md py-space-xs flex items-center justify-between">
+                    <span class="font-data-mono text-data-mono font-bold text-primary tracking-wider uppercase">SERIES: RG-CLEAN-316</span>
+                    <span class="font-eyebrow-technical text-eyebrow-technical text-secondary bg-surface-container px-2 py-0.5 rounded">ISO CLASS 5 (100)</span>
+                  </div>
+                  <div class="relative h-64 w-full overflow-hidden bg-surface-container cursor-pointer" data-inspect-model="cleanrooms">
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High grade stainless steel cleanroom laboratory furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHTkdifEg2yyeTXtBNsPnVP6HheIds36vzJwE2qxbowpPCJTSwoeMwcK5Yy0kUtotofkzXl9FDlR9Sxu-KrCJc6VNAnhbuf0KozmIaFdVM3iRzMNxJ7R2S32qQFV_ACoQc26w9TjEGZ5sb8KW4SjtJOUxPdbHzOyc0v8R-H72cQ3_9uiW2V26uLHcXSauoFqaSUFnxyAissQVbrGKhFc95FbUOoOeqy3G0rqGkPjelMq5IhbFQCagQYw"/>
+                    <div class="absolute top-space-xs left-space-xs flex flex-wrap gap-1">
+                      <span class="bg-primary text-on-primary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">SS 316L FINISH</span>
+                      <span class="bg-surface-container-lowest/90 text-on-surface font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-0.5 rounded shadow-sm">HEPA H14 FILTRATION</span>
+                    </div>
+                  </div>
+                  <div class="p-space-md flex flex-col gap-space-sm">
+                    <div class="flex flex-col">
+                      <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-tertiary">Sterile Workspaces</span>
+                      <h3 class="font-headline-md text-headline-md text-on-surface font-bold">MOD-Lab Cleanroom Modular Casework &amp; Fume Hoods</h3>
+                      <p class="font-body-sm text-body-sm text-secondary mt-1">
+                        Coved architectural casework, dynamic pass boxes, and chemical ducted fume cupboards fabricated in electro-polished AISI 316L stainless steel for particulate control.
+                      </p>
+                    </div>
+                    <div class="bg-surface-container-low p-space-sm rounded grid grid-cols-2 gap-space-xs font-data-mono text-data-mono">
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">METALLURGY:</span>
+                        <span class="text-on-surface font-semibold">AISI 316L / 304 1.5mm</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">FILTRATION:</span>
+                        <span class="text-on-surface font-semibold">H14 HEPA (99.995%)</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">AIRFLOW:</span>
+                        <span class="text-on-surface font-semibold">0.45 m/s ±20% Laminar</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-secondary uppercase text-[10px]">EXHAUST TYPE:</span>
+                        <span class="text-on-surface font-semibold">Bypass Constant / VAV</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-space-xs font-data-mono text-data-mono text-secondary">
+                      <span class="material-symbols-outlined text-tertiary text-[16px]">air</span>
+                      <span>Magnehelic differential pressure gauges fitted standard</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-space-md pt-0 flex flex-col sm:flex-row items-center gap-space-xs">
+                  <button class="w-full sm:flex-1 bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-xs text-center rounded hover:bg-primary transition-colors flex items-center justify-center gap-1 cursor-pointer" data-open-rfq data-prefill-model="MOD-Lab Cleanroom" type="button">
+                    <span>Enquire Now</span>
+                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  </button>
+                  <button class="w-full sm:w-auto bg-surface-container-high text-on-surface font-label-btn text-label-btn uppercase px-space-sm py-space-xs rounded hover:bg-surface-variant transition-colors flex items-center justify-center gap-1 cursor-pointer" data-inspect-model="cleanrooms" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-primary">view_in_ar</span>
+                    <span>Inspect</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- VIEW MODE 2: Technical Spec Matrix Comparison Table -->
+            <div class="bg-surface-container-lowest rounded shadow-sm overflow-hidden hidden" id="product-matrix-table">
+              <div class="p-space-md bg-surface-container-high border-b border-surface-container flex items-center justify-between">
+                <span class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface">Equipment Parametric Specification Matrix</span>
+                <span class="font-data-mono text-[11px] text-secondary">ISO/IEC 17025 ACCREDITED DATA</span>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="w-full text-left font-data-mono text-data-mono">
+                  <thead class="bg-surface-container text-on-surface uppercase text-[11px] border-b border-surface-container-high">
+                    <tr>
+                      <th class="p-space-sm">Series Model</th>
+                      <th class="p-space-sm">Domain / Category</th>
+                      <th class="p-space-sm">Thermal Bounds</th>
+                      <th class="p-space-sm">Ramp / Capacity</th>
+                      <th class="p-space-sm">Standards Met</th>
+                      <th class="p-space-sm text-right">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-surface-container-high text-body-sm">
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                      <td class="p-space-sm font-bold text-primary">RG-RH-1000</td>
+                      <td class="p-space-sm text-secondary">Temp &amp; Humidity</td>
+                      <td class="p-space-sm">-70°C to +180°C</td>
+                      <td class="p-space-sm">3.0°C/min • 250L-1500L</td>
+                      <td class="p-space-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">IEC 60068-2</span></td>
+                      <td class="p-space-sm text-right">
+                        <button class="text-primary font-bold hover:underline" data-inspect-model="rh-series">Inspect →</button>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                      <td class="p-space-sm font-bold text-primary">RG-TS-3ZONE</td>
+                      <td class="p-space-sm text-secondary">Thermal Shock (ESS)</td>
+                      <td class="p-space-sm">-75°C to +200°C</td>
+                      <td class="p-space-sm">&lt;10s Basket • 50kg</td>
+                      <td class="p-space-sm"><span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant text-[11px]">MIL-STD 810G</span></td>
+                      <td class="p-space-sm text-right">
+                        <button class="text-primary font-bold hover:underline" data-inspect-model="ts-series">Inspect →</button>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                      <td class="p-space-sm font-bold text-primary">RG-WIC-ROOM</td>
+                      <td class="p-space-sm text-secondary">Walk-in Climatic</td>
+                      <td class="p-space-sm">-50°C to +120°C</td>
+                      <td class="p-space-sm">8 m³ to 120 m³ Custom</td>
+                      <td class="p-space-sm"><span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-[11px]">EV BATTERY</span></td>
+                      <td class="p-space-sm text-right">
+                        <button class="text-primary font-bold hover:underline" data-inspect-model="wic-series">Inspect →</button>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                      <td class="p-space-sm font-bold text-primary">RG-SSC-600</td>
+                      <td class="p-space-sm text-secondary">Salt Spray Corrosion</td>
+                      <td class="p-space-sm">Amb to +55°C</td>
+                      <td class="p-space-sm">250L / 600L / 1200L</td>
+                      <td class="p-space-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">ASTM B117</span></td>
+                      <td class="p-space-sm text-right">
+                        <button class="text-primary font-bold hover:underline" data-inspect-model="ssc-series">Inspect →</button>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                      <td class="p-space-sm font-bold text-primary">RG-ROBO-QC</td>
+                      <td class="p-space-sm text-secondary">Robotic Automation</td>
+                      <td class="p-space-sm">Factory Ambient</td>
+                      <td class="p-space-sm">10-60kg • ±0.02mm</td>
+                      <td class="p-space-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">ISO 10218</span></td>
+                      <td class="p-space-sm text-right">
+                        <button class="text-primary font-bold hover:underline" data-inspect-model="automation">Inspect →</button>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-surface-container-low transition-colors">
+                      <td class="p-space-sm font-bold text-primary">RG-CLEAN-316</td>
+                      <td class="p-space-sm text-secondary">Modular Cleanrooms</td>
+                      <td class="p-space-sm">HVAC Controlled</td>
+                      <td class="p-space-sm">0.45 m/s HEPA H14</td>
+                      <td class="p-space-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-[11px]">ISO 14644-1</span></td>
+                      <td class="p-space-sm text-right">
+                        <button class="text-primary font-bold hover:underline" data-inspect-model="cleanrooms">Inspect →</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Pagination & Spec Matrix Indicator -->
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md font-data-mono text-data-mono reveal-on-scroll">
+              <span class="text-secondary text-[12px]">SHOWING 1 TO 6 OF 24 MODELS ACROSS ALL ENVIRONMENTAL CATEGORIES</span>
+              <div class="flex items-center gap-space-xs">
+                <button class="px-space-sm py-1.5 rounded bg-primary-container text-on-primary font-bold">1</button>
+                <button class="px-space-sm py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">2</button>
+                <button class="px-space-sm py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">3</button>
+                <button class="px-space-sm py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">4</button>
+                <button class="px-space-sm py-1.5 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface flex items-center gap-1 transition-colors">
+                  <span>NEXT</span>
+                  <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                </button>
+              </div>
+            </div>
+          </main>
+        </div>
+      </section>
+
+      <!-- Technical Validation Protocols Section -->
+      <section class="w-full bg-surface-container py-space-2xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop">
+        <div class="max-w-[1440px] mx-auto flex flex-col gap-space-xl">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md reveal-on-scroll">
+            <div class="flex flex-col gap-space-2xs">
+              <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-tertiary">CALIBRATION DISCIPLINE</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface uppercase font-bold">FACTORY ACCEPTANCE TESTING (FAT) &amp; SAT PROTOCOLS</h2>
+              <p class="font-body-md text-body-md text-secondary max-w-2xl">
+                Every chamber is pre-calibrated across 9 spatial multi-point thermocouple grids prior to dispatch from our Chakan manufacturing facility.
+              </p>
+            </div>
+            <div class="bg-surface-container-lowest px-space-md py-space-xs rounded shadow-sm flex items-center gap-space-md">
+              <span class="font-data-mono text-data-mono font-bold text-primary">FAT / SAT TRACEABILITY:</span>
+              <span class="font-data-mono text-data-mono text-secondary">NABL ACCREDITED LAB LABELS</span>
+            </div>
+          </div>
+
+          <!-- 4-Step Technical Verification Pipeline -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-space-xs relative overflow-hidden hover-lift reveal-on-scroll">
+              <div class="flex items-center justify-between text-secondary">
+                <span class="font-spec-numeral text-spec-numeral text-outline-variant font-bold">01</span>
+                <span class="material-symbols-outlined text-primary text-[24px]">architecture</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Thermal Chamber CFD Modeling</h3>
+              <p class="font-body-sm text-body-sm text-secondary">Airflow dynamics and thermal gradient simulation to eliminate cold-pockets and dead-zones before metal shearing.</p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-space-xs relative overflow-hidden hover-lift reveal-on-scroll delay-100">
+              <div class="flex items-center justify-between text-secondary">
+                <span class="font-spec-numeral text-spec-numeral text-outline-variant font-bold">02</span>
+                <span class="material-symbols-outlined text-primary text-[24px]">troubleshoot</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Hermetic Cascade Leak Testing</h3>
+              <p class="font-body-sm text-body-sm text-secondary">Helium mass spectrometer leak testing of copper and stainless refrigeration manifolds up to 45 bar pressure.</p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-space-xs relative overflow-hidden hover-lift reveal-on-scroll delay-200">
+              <div class="flex items-center justify-between text-secondary">
+                <span class="font-spec-numeral text-spec-numeral text-outline-variant font-bold">03</span>
+                <span class="material-symbols-outlined text-primary text-[24px]">grid_4x4</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">9-Point Spatial Calibration</h3>
+              <p class="font-body-sm text-body-sm text-secondary">Continuous 72-hour thermal mapping with calibrated PT100 probes complying with DIN 12880 / IEC 60068 standards.</p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col gap-space-xs relative overflow-hidden hover-lift reveal-on-scroll delay-300">
+              <div class="flex items-center justify-between text-secondary">
+                <span class="font-spec-numeral text-spec-numeral text-outline-variant font-bold">04</span>
+                <span class="material-symbols-outlined text-primary text-[24px]">assignment_turned_in</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">IQ / OQ / PQ Documentation</h3>
+              <p class="font-body-sm text-body-sm text-secondary">Comprehensive validation binders with electrical schematics, calibration certificates, and PLC source logs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Technical Advisory & Custom RFQ Banner -->
+      <section class="w-full bg-surface-container-lowest py-space-3xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop">
+        <div class="max-w-[1440px] mx-auto bg-surface-container-high rounded p-space-xl lg:p-space-2xl flex flex-col lg:flex-row items-center justify-between gap-space-xl shadow-sm reveal-on-scroll">
+          <div class="flex flex-col gap-space-xs max-w-2xl">
+            <span class="bg-primary text-on-primary font-eyebrow-technical text-eyebrow-technical uppercase px-space-xs py-space-2xs rounded w-fit">
+              APPLICATION ENGINEERING DESK
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface uppercase font-bold">
+              Custom chamber dimensions or bespoke thermal ramp rates needed?
+            </h2>
+            <p class="font-body-md text-body-md text-secondary">
+              Our in-house design engineering team constructs custom test rigs tailored to aerospace payloads, EV battery pack stress enclosures, and high-altitude explosive atmosphere chambers.
+            </p>
+            <div class="flex flex-wrap items-center gap-space-md pt-space-xs font-data-mono text-data-mono text-tertiary font-semibold">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Custom Footprint Fitments</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> LN2 Boosted Cooling (up to 20°C/min)</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Explosion-Proof ATEX Electricals</span>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row lg:flex-col items-stretch gap-space-sm w-full lg:w-auto min-w-[280px]">
+            <button class="bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-md px-space-xl rounded text-center hover:bg-primary transition-all shadow-md flex items-center justify-center gap-space-xs cursor-pointer" data-open-rfq data-prefill-model="Custom Chamber Requirement" type="button">
+              <span class="material-symbols-outlined text-[20px]">request_quote</span>
+              <span>Submit Custom RFQ</span>
+            </button>
+            <a class="bg-surface-container-lowest text-on-surface font-label-btn text-label-btn uppercase py-space-md px-space-xl rounded text-center hover:bg-surface-variant transition-colors flex items-center justify-center gap-space-xs" href="contact.html">
+              <span class="material-symbols-outlined text-[20px] text-tertiary">support_agent</span>
+              <span>Consult Application Engineer</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Technical Blueprint Quick-View Modal -->
+  <div class="modal-backdrop fixed inset-0 z-50 bg-inverse-surface/75 backdrop-blur-md flex items-center justify-center p-space-md" id="blueprint-modal">
+    <div class="modal-content bg-surface-container-lowest rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col">
+      <div class="p-space-md bg-surface-container-high border-b border-surface-container flex items-center justify-between sticky top-0 z-10">
+        <div class="flex items-center gap-space-sm">
+          <span class="font-data-mono text-data-mono font-bold text-primary" id="modal-product-code">SERIES: RG-RH-1000</span>
+          <span class="px-2 py-0.5 rounded bg-surface-container font-eyebrow-technical text-eyebrow-technical text-secondary" id="modal-product-tag">FLAGSHIP RH RIG</span>
+        </div>
+        <button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="close-blueprint-modal" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="p-space-lg flex flex-col gap-space-lg">
+        <div class="flex flex-col md:flex-row gap-space-lg items-start">
+          <div class="w-full md:w-5/12 aspect-[4/3] rounded bg-surface-container overflow-hidden shrink-0">
+            <img class="w-full h-full object-cover" id="modal-product-img" src="" alt="Product Preview"/>
+          </div>
+          <div class="flex flex-col gap-space-xs flex-1">
+            <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-tertiary" id="modal-product-badge">IEC 60068-2 / NABL RECOG</span>
+            <h3 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase" id="modal-product-title">Model Title</h3>
+            <p class="font-body-sm text-body-sm text-secondary" id="modal-product-desc">Model description...</p>
+            <div class="pt-space-xs font-data-mono text-data-mono text-secondary">
+              <span class="font-bold text-on-surface">Test Standards: </span>
+              <span id="modal-standards">IEC 60068, MIL-STD 810G</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center gap-2 border-b border-surface-container pb-2">
+            <button class="tab-btn modal-tab-btn active px-space-md py-1 rounded bg-surface-container text-on-surface font-label-btn text-label-btn uppercase" data-tab="specs" type="button">Parametric Matrix</button>
+            <button class="tab-btn modal-tab-btn px-space-md py-1 rounded bg-surface-container text-on-surface font-label-btn text-label-btn uppercase" data-tab="schematic" type="button">CAD Schematics</button>
+            <button class="tab-btn modal-tab-btn px-space-md py-1 rounded bg-surface-container text-on-surface font-label-btn text-label-btn uppercase" data-tab="compliance" type="button">Compliance Dossier</button>
+          </div>
+
+          <div class="modal-tab-panel" id="panel-specs">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-space-md" id="modal-specs-list"></div>
+          </div>
+
+          <div class="modal-tab-panel hidden" id="panel-schematic">
+            <div class="p-space-md bg-surface-container rounded font-data-mono text-data-mono text-secondary flex flex-col gap-2">
+              <div class="flex items-center justify-between text-on-surface font-bold">
+                <span>CAD FILE: 3D-STEP-REV4.DWG</span>
+                <span class="text-tertiary">ACCURACY: ±0.01 mm</span>
+              </div>
+              <p class="text-body-sm">Parametric solid model contains complete refrigeration circuit, plenum airflow baffles, cam-lock thermal wall junctions, and 9-point calibrated PT100 sensor matrix.</p>
+              <div class="h-32 rounded bg-surface-container-high cad-grid-light flex items-center justify-center text-primary font-bold">
+                [ 2D/3D SCHEMATIC PREVIEW VECTOR LOADED ]
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-tab-panel hidden" id="panel-compliance">
+            <div class="p-space-md bg-surface-container rounded font-body-sm text-body-sm text-secondary flex flex-col gap-2">
+              <span class="font-bold text-on-surface font-headline-sm uppercase">NABL Traceable Test Protocol (FAT &amp; SAT)</span>
+              <p>Every chamber is subjected to 72 hours continuous cyclic thermal stress screening with certified calibration data logs prior to factory dispatch.</p>
+              <div class="flex items-center gap-space-md font-data-mono text-data-mono text-tertiary pt-2">
+                <span>• IQ/OQ Documentation Included</span>
+                <span>• 21 CFR Part 11 Audit Trail Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end gap-space-sm pt-space-sm border-t border-surface-container">
+          <button class="px-space-md py-space-xs rounded bg-surface-container text-on-surface font-label-btn text-label-btn uppercase hover:bg-surface-variant transition-colors" onclick="document.getElementById('blueprint-modal').classList.remove('active'); document.body.style.overflow='';" type="button">Close</button>
+          <button class="px-space-lg py-space-xs rounded bg-primary-container text-on-primary font-label-btn text-label-btn uppercase hover:bg-primary transition-all flex items-center gap-1" id="modal-rfq-action" data-open-rfq type="button">
+            <span>Enquire on this Model</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global RFQ Modal -->
+  <div class="modal-backdrop fixed inset-0 z-50 bg-inverse-surface/75 backdrop-blur-md flex items-center justify-center p-space-md" id="global-rfq-modal">
+    <div class="modal-content bg-surface-container-lowest rounded-xl max-w-2xl w-full p-space-xl shadow-2xl relative">
+      <button class="absolute top-space-md right-space-md w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="close-rfq-modal" type="button">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <div class="flex flex-col gap-space-2xs mb-space-md">
+        <span class="font-eyebrow-technical text-eyebrow-technical text-primary uppercase">APPLICATION ENGINEERING DESK</span>
+        <h3 class="font-headline-lg text-headline-lg font-bold uppercase text-on-surface">Request Technical Feasibility &amp; Quote</h3>
+        <p class="font-body-sm text-body-sm text-secondary">Our Pune factory engineers evaluate parameters and respond with drawings &amp; feasibility in 24 hours.</p>
+      </div>
+
+      <form class="flex flex-col gap-space-sm" id="modal-rfq-form">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+          <div class="flex flex-col gap-1">
+            <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Name *</label>
+            <input class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" required="" type="text" placeholder="Rajesh Kumar"/>
+          </div>
+          <div class="flex flex-col gap-1">
+            <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Company *</label>
+            <input class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" required="" type="text" placeholder="Mahindra Defence / Tata"/>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+          <div class="flex flex-col gap-1">
+            <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Email *</label>
+            <input class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" required="" type="email" placeholder="rajesh@company.com"/>
+          </div>
+          <div class="flex flex-col gap-1">
+            <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Mobile / WhatsApp *</label>
+            <input class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" required="" type="tel" placeholder="+91 98000 00000"/>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Equipment Model / Solution *</label>
+          <select class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" id="modal-rfq-model-select">
+            <option>RH-Series Temperature &amp; Humidity Test Chamber</option>
+            <option>TS-Series Three-Zone Thermal Shock Chamber</option>
+            <option>WIC-Pro Walk-in Climatic Chamber</option>
+            <option>SSC-Series Salt Spray Fog Chamber</option>
+            <option>IND-Robotics Automated Testing Cell</option>
+            <option>MOD-Lab Cleanroom Modular Casework</option>
+            <option>Custom Engineering Solution (Bespoke Specs)</option>
+          </select>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Operating Specs / Chamber Capacity *</label>
+          <textarea class="p-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" rows="3" placeholder="Volume (Liters), temperature range, standard (MIL/IEC/ASTM), or target timeline..." required=""></textarea>
+        </div>
+
+        <button class="h-12 bg-primary-container text-on-primary font-label-btn text-label-btn uppercase tracking-wider rounded shadow-md hover:bg-primary transition-all flex items-center justify-center gap-space-xs mt-space-xs cursor-pointer" type="submit">
+          <span>Submit Request for Quotation</span>
+          <span class="material-symbols-outlined text-[18px]">send</span>
+        </button>
+      </form>
+
+      <div class="hidden p-space-md bg-tertiary-container text-on-tertiary rounded flex items-center gap-space-sm mt-space-sm" id="modal-rfq-success">
+        <span class="material-symbols-outlined text-tertiary-fixed text-[24px]">task_alt</span>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm uppercase font-bold">RFQ Packet Submitted Successfully</span>
+          <span class="font-body-sm text-body-sm text-on-tertiary-container">Ticket assigned to Chakan Plant Application Engineering Desk.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w-full bg-inverse-surface text-inverse-on-surface pt-space-3xl pb-space-2xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop">
+    <div class="max-w-[1440px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-2xl pb-space-2xl">
+        <div class="lg:col-span-2 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-md">
+            <div class="h-8 w-8 bg-surface-container-lowest flex items-center justify-center rounded">
+              <span class="material-symbols-outlined text-primary text-[20px]">precision_manufacturing</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-headline-sm text-headline-sm uppercase text-inverse-on-surface font-bold">Rango Engineering</span>
+              <span class="font-eyebrow-technical text-eyebrow-technical text-outline-variant uppercase">Industrial Plant Systems</span>
+            </div>
+          </div>
+          <p class="font-body-md text-body-md text-surface-variant max-w-md">
+            Built for Performance. Designed for Durability. Delivering precision manufacturing, custom machining, and turn-key industrial infrastructure with uncompromised engineering tolerances.
+          </p>
+          <div class="flex flex-col gap-space-2xs pt-space-xs font-data-mono text-data-mono text-surface-variant">
+            <div class="flex items-center gap-space-xs">
+              <span class="text-outline-variant">GSTIN:</span><span>27AABCR1234F1Z5</span>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <span class="text-outline-variant">REGD PLANT:</span><span>Plot 48/B, MIDC Industrial Area, Chakan, Pune, MH 410501</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-headline-sm text-headline-sm uppercase text-inverse-on-surface font-semibold">Categories</h3>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-variant">
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="products.html#rh-series">Environmental Chambers</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="products.html#ts-series">Thermal Shock Rigs</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="products.html#cleanrooms">Modular Cleanrooms</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="products.html#automation">Industrial Automation Jigs</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-headline-sm text-headline-sm uppercase text-inverse-on-surface font-semibold">Company</h3>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-variant">
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="about.html">About Organization</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="projects.html">Turnkey Projects</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="services.html">Calibration &amp; QC</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="contact.html">Plant Locators</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-headline-sm text-headline-sm uppercase text-inverse-on-surface font-semibold">Technical Bulletin</h3>
+          <p class="font-body-sm text-body-sm text-surface-variant">Receive monthly industrial bulletins, metallurgic research, and machining capability updates.</p>
+          <div class="flex flex-col gap-space-xs pt-space-xs">
+            <input class="bg-surface-variant/10 text-inverse-on-surface placeholder:text-outline-variant px-space-md py-space-xs rounded font-data-mono text-data-mono focus:outline-none focus:ring-1 focus:ring-on-primary-container" placeholder="engineer@domain.com" type="email"/>
+            <button class="bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-xs rounded hover:bg-primary transition-colors cursor-pointer" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md font-data-mono text-data-mono text-surface-variant border-t border-surface-variant/10">
+        <div class="flex items-center gap-space-md flex-wrap">
+          <span>© 2025 Rango Engineering Solutions Pvt. Ltd. All rights reserved.</span>
+          <span class="hidden sm:inline">•</span>
+          <span>ISO 9001:2015 Registered</span>
+        </div>
+        <div class="flex items-center gap-space-lg">
+          <span class="hover:text-inverse-on-surface cursor-pointer">Privacy Policy</span>
+          <span class="hover:text-inverse-on-surface cursor-pointer">Terms of Contract</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

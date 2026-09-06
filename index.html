@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Rango Engineering Solutions | Industrial & Environmental Test Chambers</title>
+  <meta name="description" content="Precision manufacturing, turnkey environmental test chambers, cleanroom laboratories, and factory automation engineered to MIL-STD, IEC, and ASTM standards."/>
+  
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- Base styling & Tailwind CDN -->
+  <style>
+    @layer base { 
+      html, body { margin: 0; padding: 0; } 
+      body { overscroll-behavior: none; } 
+      main > :first-child { margin-top: 0 !important; } 
+      main > :last-child { margin-bottom: 0 !important; } 
+    } 
+    ::-webkit-scrollbar { display: none; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = { 
+      darkMode: "class", 
+      theme: { 
+        extend: { 
+          colors: { 
+            "surface-container": "#f1ede6", 
+            "tertiary": "#002a43", 
+            "on-surface": "#1c1c18", 
+            "on-error": "#ffffff", 
+            "primary-fixed": "#ffdadb", 
+            "surface-container-high": "#ebe8e1", 
+            "surface-container-low": "#f7f3ec", 
+            "inverse-primary": "#ffb2b8", 
+            "secondary-container": "#e4e1e8", 
+            "surface-container-highest": "#e6e2db", 
+            "surface-variant": "#e6e2db", 
+            "error-container": "#ffdad6", 
+            "primary-fixed-dim": "#ffb2b8", 
+            "on-secondary-container": "#65646a", 
+            "on-secondary-fixed-variant": "#47464c", 
+            "inverse-on-surface": "#f4f0e9", 
+            "background": "#fdf9f2", 
+            "on-primary-fixed-variant": "#871c31", 
+            "on-background": "#1c1c18", 
+            "on-primary": "#ffffff", 
+            "tertiary-container": "#0c4160", 
+            "on-secondary-fixed": "#1b1b20", 
+            "primary-container": "#7a1128", 
+            "surface-bright": "#fdf9f2", 
+            "surface": "#fdf9f2", 
+            "on-tertiary-fixed": "#001e30", 
+            "primary": "#570016", 
+            "outline": "#8a7172", 
+            "inverse-surface": "#31302c", 
+            "on-error-container": "#93000a", 
+            "surface-tint": "#a73547", 
+            "surface-dim": "#dddad3", 
+            "error": "#ba1a1a", 
+            "outline-variant": "#ddbfc0", 
+            "surface-container-lowest": "#ffffff", 
+            "on-tertiary-container": "#82add2", 
+            "on-primary-container": "#ff828f", 
+            "secondary": "#5e5e64", 
+            "secondary-fixed": "#e4e1e8", 
+            "tertiary-fixed-dim": "#a0cbf1", 
+            "on-surface-variant": "#574143", 
+            "on-tertiary-fixed-variant": "#1a4a6a", 
+            "on-tertiary": "#ffffff", 
+            "on-primary-fixed": "#40000e", 
+            "on-secondary": "#ffffff", 
+            "tertiary-fixed": "#cbe6ff", 
+            "secondary-fixed-dim": "#c8c5cc" 
+          }, 
+          borderRadius: { 
+            "DEFAULT": "0.125rem", 
+            "lg": "0.25rem", 
+            "xl": "0.5rem", 
+            "full": "0.75rem" 
+          }, 
+          spacing: { 
+            "space-2xl": "3rem", 
+            "grid-margin-tablet": "2rem", 
+            "grid-margin-mobile": "1.25rem", 
+            "space-sm": "0.75rem", 
+            "space-xs": "0.5rem", 
+            "gutter-desktop": "2rem", 
+            "gutter-mobile": "1rem", 
+            "grid-margin-desktop": "4rem", 
+            "space-2xs": "0.25rem", 
+            "space-3xl": "5rem", 
+            "space-4xl": "7.5rem", 
+            "space-md": "1rem", 
+            "space-lg": "1.5rem", 
+            "space-xl": "2rem" 
+          }, 
+          fontFamily: { 
+            "eyebrow-technical": ["Space Grotesk", "sans-serif"], 
+            "body-sm": ["Inter", "sans-serif"], 
+            "data-mono": ["Inter", "monospace"], 
+            "label-btn": ["Space Grotesk", "sans-serif"], 
+            "headline-xl-mobile": ["Space Grotesk", "sans-serif"], 
+            "display-hero": ["Space Grotesk", "sans-serif"], 
+            "body-md": ["Inter", "sans-serif"], 
+            "body-lg": ["Inter", "sans-serif"], 
+            "display-hero-mobile": ["Space Grotesk", "sans-serif"], 
+            "headline-xl": ["Space Grotesk", "sans-serif"], 
+            "headline-lg": ["Space Grotesk", "sans-serif"], 
+            "spec-numeral": ["Space Grotesk", "sans-serif"], 
+            "headline-sm": ["Space Grotesk", "sans-serif"], 
+            "headline-md": ["Space Grotesk", "sans-serif"] 
+          }, 
+          fontSize: { 
+            "eyebrow-technical": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" }], 
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], 
+            "data-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], 
+            "label-btn": ["13px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "600" }], 
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], 
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], 
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], 
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], 
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], 
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], 
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], 
+            "spec-numeral": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], 
+            "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], 
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }] 
+          } 
+        } 
+      } 
+    };
+  </script>
+  
+  <!-- Custom Scroll Animations Stylesheet -->
+  <link rel="stylesheet" href="assets/css/animations.css"/>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+  <!-- Top hairline scroll progress bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Main Fixed Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 w-full bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all duration-300">
+    <!-- Top Utility Bar -->
+    <div class="w-full bg-surface-container-high py-space-2xs px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop">
+      <div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between gap-space-xs">
+        <div class="flex items-center gap-space-md">
+          <span class="inline-flex items-center gap-space-2xs text-tertiary font-eyebrow-technical text-eyebrow-technical uppercase tracking-wider">
+            <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>ISO 9001:2015 CERTIFIED
+          </span>
+          <span class="hidden sm:inline-flex items-center gap-space-2xs text-secondary font-data-mono text-data-mono">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>GST COMPLIANT (GSTIN: 27AABCR1234F1Z5)
+          </span>
+        </div>
+        <div class="flex items-center gap-space-lg">
+          <span class="text-secondary font-data-mono text-data-mono hidden md:inline">SUPPORT: PAN INDIA INDUSTRIAL NETWORK</span>
+          <a class="text-primary font-eyebrow-technical text-eyebrow-technical uppercase tracking-wider hover:text-on-primary-fixed-variant transition-colors" href="contact.html">QUICK INQUIRY HOTLINE →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Primary Navbar -->
+    <div class="h-20 w-full px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop flex items-center justify-between max-w-[1440px] mx-auto">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-space-md focus:outline-none">
+        <img alt="Rango Engineering Solutions Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WAp39gKFpWuUeu13vp-Odwo4dvXwsNJjRllAJKphOp8KTyPDM6sJAHJWy1cl00hyeQGtBwjN6dE7EaiDbK4ZKn-b9uPcC8QwqiXTONI8hx7Jnuh758bUkhxX2DEpHlxaV3wW7rW4YB8kIncIuxoQgn8xpCbOrySyMNq9d_7MrCm_B2Z2g3F96P19JVRTkcmE6nO5IhRx4nPM_hCBLJwoAEqZEb50KwGZd1ZjBpcokO97z5TnTCjZCwPYLn"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-bold leading-none">Rango</span>
+          <span class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase tracking-widest mt-0.5">Engineering Solutions</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu (ScrollSpy enabled) -->
+      <nav class="hidden xl:flex items-center gap-space-xs" id="desktop-nav">
+        <a aria-current="page" class="px-space-sm py-space-xs transition-all bg-primary-container text-on-primary font-bold rounded" data-path="home" href="index.html">Home</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="about-us" href="about.html">About Us</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="products" href="products.html">Products</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="services" href="services.html">Services</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="projects" href="projects.html">Projects</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="clients" href="#clients">Clients</a>
+        <a class="px-space-sm py-space-xs text-on-surface-variant font-label-btn text-label-btn hover:text-on-surface transition-colors" data-path="contact" href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Right Action CTAs & Mobile Toggle -->
+      <div class="flex items-center gap-space-md">
+        <div class="hidden lg:flex flex-col text-right">
+          <span class="font-data-mono text-data-mono text-on-surface font-semibold">+91 98765 43210</span>
+          <span class="font-data-mono text-data-mono text-secondary">sales@rangoeng.com</span>
+        </div>
+        <button class="inline-flex items-center gap-space-2xs bg-primary-container text-on-primary font-label-btn text-label-btn uppercase px-space-lg py-space-sm rounded shadow-[0_1px_8px_rgba(0,0,0,0.04)] hover:bg-primary transition-all cursor-pointer" data-open-rfq type="button">
+          <span>Get a Quote</span>
+        </button>
+        <!-- Mobile Drawer Toggle -->
+        <button aria-label="Open Navigation Menu" class="xl:hidden w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="mobile-menu-btn" type="button">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 hidden transition-opacity" id="mobile-drawer-backdrop"></div>
+  <div class="fixed top-0 right-0 bottom-0 w-[300px] sm:w-[340px] bg-surface-container-lowest z-50 shadow-2xl p-space-lg flex flex-col justify-between" id="mobile-drawer">
+    <div class="flex flex-col gap-space-lg">
+      <div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm font-bold uppercase text-on-surface">Rango</span>
+          <span class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase">Plant Systems</span>
+        </div>
+        <button aria-label="Close Drawer" class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="close-drawer-btn" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-1">
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase bg-primary-container text-on-primary font-bold" href="index.html">Home</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="about.html">About Us</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="products.html">Products</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="services.html">Services</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="projects.html">Projects</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#clients">Clients</a>
+        <a class="px-space-sm py-space-xs rounded font-label-btn text-label-btn uppercase text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="flex flex-col gap-space-sm pt-space-md border-t border-surface-container">
+      <button class="w-full bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-sm rounded shadow-md text-center" data-open-rfq type="button">
+        Submit Rapid RFQ
+      </button>
+      <div class="flex flex-col text-center font-data-mono text-data-mono text-secondary">
+        <span>+91 98765 43210</span>
+        <span>MIDC Chakan, Pune MH</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="w-full pt-20 bg-background min-h-screen">
+    <div class="flex flex-col w-full">
+      <!-- ================================================================= -->
+      <!-- 1. HERO SECTION (Full-bleed industrial backdrop with CAD scrim)   -->
+      <!-- ================================================================= -->
+      <section class="relative w-full -mt-20 overflow-hidden bg-inverse-surface text-inverse-on-surface" id="hero">
+        <!-- Background Image with Scrim -->
+        <div class="absolute inset-0 z-0">
+          <img alt="Advanced precision test chambers and automated industrial assembly plant with cleanroom laboratory" class="w-full h-full object-cover object-center opacity-35 scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrVg6pvoiAliTLAb1jPKeEihptzzV4sanhY7FQi1MjqZG_JGWP2aUv8OWhE0AZy_QC4S1IGh-I5SynFpGDC_EcWCQgQc7h8wiWRFeQWtGO6ihGHbgi-fQCQnv0DCeQpCy6B4N3E2TZOIaL1mBy8A-jAr1Q5TnMNhs_kxbI4VMpRbCewMGVMmYG1eaWvPvzkfsL0-fe0Q8MhZ4jGT0fntTqstC620ttyuDTGhOY_K1HNrzLDFnVsB0qpw"/>
+          <div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/90 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-transparent to-inverse-surface/60"></div>
+          <!-- Hairline Blueprint CAD Overlay -->
+          <div class="absolute inset-0 opacity-10 cad-grid-shimmer"></div>
+        </div>
+
+        <!-- Hero Content Container -->
+        <div class="relative z-10 max-w-[1440px] mx-auto px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop pt-36 pb-space-3xl flex flex-col justify-between">
+          <!-- Top Technical Eyebrow & Status Indicator -->
+          <div class="flex flex-wrap items-center gap-space-sm mb-space-lg reveal-on-scroll">
+            <span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-primary-container text-on-primary font-eyebrow-technical text-eyebrow-technical uppercase tracking-wider shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-on-primary-container animate-pulse"></span>
+              DIRECT INDUSTRIAL OEM
+            </span>
+            <div class="hidden sm:flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-surface-variant/10 backdrop-blur-md text-surface-container-high font-data-mono text-data-mono">
+              <span class="material-symbols-outlined text-[16px] text-tertiary-fixed">verified</span>
+              <span>ISO 9001:2015 CERTIFIED • NABL ACCREDITED PROTOCOLS</span>
+            </div>
+            <span class="text-tertiary-fixed font-data-mono text-data-mono hidden lg:inline-block">
+              CAD/CAM SPEC VER: 4.8.2-IND
+            </span>
+          </div>
+
+          <!-- Main Typography Cluster -->
+          <div class="max-w-4xl reveal-left">
+            <h1 class="font-display-hero text-display-hero text-inverse-on-surface uppercase tracking-tight leading-[1.08] mb-space-md">
+              Built for <span class="text-on-primary-container">Performance.</span><br/>
+              Designed for <span class="text-surface-container-high">Durability.</span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-surface-variant max-w-2xl leading-relaxed mb-space-xl">
+              Integrated Engineering Solutions for Modern Industries — Custom Environmental Test Chambers, High-Containment Lab Infrastructures, &amp; Turnkey Factory Automation Systems built to exacting tolerances.
+            </p>
+
+            <!-- CTA Cluster -->
+            <div class="flex flex-wrap items-center gap-space-md">
+              <a class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary px-space-xl py-space-sm rounded font-label-btn text-label-btn uppercase tracking-wider shadow-md hover:bg-primary transition-all group" href="products.html">
+                <span>Explore Products</span>
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+              <button class="inline-flex items-center gap-space-xs bg-surface-variant/15 text-inverse-on-surface hover:bg-surface-variant/25 px-space-xl py-space-sm rounded font-label-btn text-label-btn uppercase tracking-wider backdrop-blur-sm transition-colors cursor-pointer" data-open-rfq type="button">
+                <span class="material-symbols-outlined text-[18px] text-tertiary-fixed">request_quote</span>
+                <span>Request a Quote</span>
+              </button>
+              <div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest/10 rounded backdrop-blur-sm">
+                <span class="material-symbols-outlined text-primary-fixed text-[20px]">call</span>
+                <div class="flex flex-col">
+                  <span class="font-eyebrow-technical text-[10px] text-surface-variant uppercase tracking-widest leading-none">Engineering Hotline</span>
+                  <span class="font-data-mono text-data-mono font-semibold text-inverse-on-surface">+91 98765 43210</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Bottom Quick Highlights Bar (Spec Numerals & Animated Counters) -->
+          <div class="mt-space-2xl pt-space-lg grid grid-cols-2 md:grid-cols-4 gap-space-md bg-surface-container-lowest/5 backdrop-blur-md rounded p-space-md reveal-on-scroll">
+            <div class="flex flex-col">
+              <span class="font-eyebrow-technical text-eyebrow-technical text-on-primary-container uppercase">Thermal Range</span>
+              <span class="font-headline-sm text-headline-sm text-inverse-on-surface">-70°C to +180°C</span>
+              <span class="font-data-mono text-[11px] text-surface-variant">Uniformity: ±0.5°C</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-eyebrow-technical text-eyebrow-technical text-tertiary-fixed uppercase">Automation Stack</span>
+              <span class="font-headline-sm text-headline-sm text-inverse-on-surface">Siemens • Allen Bradley</span>
+              <span class="font-data-mono text-[11px] text-surface-variant">SCADA / IoT Architecture</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-eyebrow-technical text-eyebrow-technical text-on-primary-container uppercase">Fabrication Standard</span>
+              <span class="font-headline-sm text-headline-sm text-inverse-on-surface">SS304 / SS316L Heavy</span>
+              <span class="font-data-mono text-[11px] text-surface-variant">Laser Cut • TIG Purged</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-eyebrow-technical text-eyebrow-technical text-tertiary-fixed uppercase">Execution SLA</span>
+              <span class="font-headline-sm text-headline-sm text-inverse-on-surface">Pan-India Direct</span>
+              <span class="font-data-mono text-[11px] text-surface-variant">48-Hr Site Mobilization</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- 2. VALUE PROPOSITION & STAT COUNTER STRIP                         -->
+      <!-- ================================================================= -->
+      <section class="w-full bg-surface-container py-space-2xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop shadow-sm" id="value-proposition">
+        <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-space-2xl">
+          <!-- Proposition Left Column -->
+          <div class="lg:w-5/12 flex flex-col gap-space-xs reveal-left">
+            <span class="font-eyebrow-technical text-eyebrow-technical text-primary uppercase tracking-widest">
+              SYSTEM INTEGRITY &amp; CAPABILITY
+            </span>
+            <h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold">
+              Where Engineering Precision Meets Practical Performance.
+            </h2>
+            <p class="font-body-md text-body-md text-secondary leading-relaxed pt-space-xs">
+              Delivering turnkey environmental test chambers, controlled atmosphere enclosures, and automated robotic systems engineered to withstand rigorous aerospace, automotive, defense, and pharmaceutical qualification protocols.
+            </p>
+          </div>
+
+          <!-- Stat Counters Right Column (Animated Counter Support) -->
+          <div class="lg:w-7/12 grid grid-cols-2 sm:grid-cols-4 gap-space-md reveal-right">
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between hover-lift">
+              <span class="material-symbols-outlined text-primary text-[28px] mb-space-xs">history_toggle_off</span>
+              <span class="font-spec-numeral text-spec-numeral text-on-surface font-bold" data-counter="10" data-suffix="+">10+</span>
+              <span class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase mt-space-2xs">Years Industry Expertise</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between hover-lift">
+              <span class="material-symbols-outlined text-tertiary text-[28px] mb-space-xs">task_alt</span>
+              <span class="font-spec-numeral text-spec-numeral text-on-surface font-bold" data-counter="500" data-suffix="+">500+</span>
+              <span class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase mt-space-2xs">Turnkey Projects Delivered</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between hover-lift">
+              <span class="material-symbols-outlined text-primary text-[28px] mb-space-xs">corporate_fare</span>
+              <span class="font-spec-numeral text-spec-numeral text-on-surface font-bold" data-counter="100" data-suffix="+">100+</span>
+              <span class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase mt-space-2xs">Enterprise Clients</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between hover-lift">
+              <span class="material-symbols-outlined text-tertiary text-[28px] mb-space-xs">hub</span>
+              <span class="font-spec-numeral text-spec-numeral text-on-surface font-bold">Pan-IN</span>
+              <span class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase mt-space-2xs">On-Site Tech Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- 3. PRODUCTS OVERVIEW GRID (6 High-Spec Technical Cards)            -->
+      <!-- ================================================================= -->
+      <section class="w-full py-space-3xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop bg-background" id="products">
+        <div class="max-w-[1440px] mx-auto flex flex-col gap-space-2xl">
+          <!-- Section Header -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md reveal-on-scroll">
+            <div class="flex flex-col gap-space-2xs">
+              <span class="font-eyebrow-technical text-eyebrow-technical text-primary uppercase tracking-widest">
+                ENGINEERED MACHINERY &amp; SYSTEMS
+              </span>
+              <h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold">
+                Product Portfolio &amp; Capabilities
+              </h2>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <span class="font-data-mono text-data-mono text-secondary">FILTER BY SECTOR:</span>
+              <a href="products.html" class="px-space-xs py-space-2xs rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-data-mono text-data-mono transition-colors">
+                FULL CATALOG (24+) →
+              </a>
+            </div>
+          </div>
+
+          <!-- 6-Card High-Density Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+            <!-- Card 1: Environmental Testing Solutions -->
+            <div class="bg-surface-container-lowest rounded shadow-md flex flex-col justify-between overflow-hidden group hover-lift reveal-on-scroll">
+              <div class="p-space-lg flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-space-xs py-space-2xs rounded bg-primary-fixed text-on-primary-fixed-variant font-eyebrow-technical text-[10px] uppercase font-bold">SERIES: RG-ENV-CLIMATIC</span>
+                  <span class="material-symbols-outlined text-primary text-[24px]">thermostat</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Environmental Testing Chambers</h3>
+                  <p class="font-body-sm text-body-sm text-secondary mt-space-2xs">
+                    Precision thermal shock, climatic walk-in rooms, cyclic humidity chambers, and dust/rain ingress test apparatus complying with MIL-STD, IEC &amp; ASTM.
+                  </p>
+                </div>
+                <!-- Spec Matrix -->
+                <div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs font-data-mono text-data-mono">
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Temp Range:</span>
+                    <span class="font-semibold text-on-surface">-70°C to +180°C</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Humidity Control:</span>
+                    <span class="font-semibold text-on-surface">10% to 98% RH</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Capacity:</span>
+                    <span class="font-semibold text-on-surface">100L up to 50,000L Walk-in</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container-high flex items-center justify-between">
+                <button class="font-eyebrow-technical text-eyebrow-technical text-primary hover:underline uppercase cursor-pointer" data-inspect-model="rh-series" type="button">INSPECT CAD MODEL</button>
+                <a class="inline-flex items-center gap-space-2xs font-label-btn text-label-btn text-primary hover:text-on-primary-fixed-variant transition-colors uppercase" href="products.html#rh-series">
+                  <span>Explore Series</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2: Laboratory Interiors & Containment -->
+            <div class="bg-surface-container-lowest rounded shadow-md flex flex-col justify-between overflow-hidden group hover-lift reveal-on-scroll delay-100">
+              <div class="p-space-lg flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-space-xs py-space-2xs rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-eyebrow-technical text-[10px] uppercase font-bold">SERIES: RG-LAB-CONT</span>
+                  <span class="material-symbols-outlined text-tertiary text-[24px]">science</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Laboratory Interiors &amp; Infrastructure</h3>
+                  <p class="font-body-sm text-body-sm text-secondary mt-space-2xs">
+                    Aerodynamic bypass chemical fume hoods, Class 100 modular cleanroom envelopes, anti-vibration analytical balances, and chemical-resistant phenolic resin casework.
+                  </p>
+                </div>
+                <!-- Spec Matrix -->
+                <div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs font-data-mono text-data-mono">
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Exhaust Standard:</span>
+                    <span class="font-semibold text-on-surface">ASHRAE 110 Compliant</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Air Flow:</span>
+                    <span class="font-semibold text-on-surface">Face Velocity 100 FPM</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Worktop:</span>
+                    <span class="font-semibold text-on-surface">Trespa TopLab / Ceramic</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container-high flex items-center justify-between">
+                <button class="font-eyebrow-technical text-eyebrow-technical text-tertiary hover:underline uppercase cursor-pointer" data-inspect-model="cleanrooms" type="button">INSPECT CAD MODEL</button>
+                <a class="inline-flex items-center gap-space-2xs font-label-btn text-label-btn text-tertiary hover:text-on-tertiary-fixed-variant transition-colors uppercase" href="products.html#cleanrooms">
+                  <span>Explore Series</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3: Smart Factory Automation -->
+            <div class="bg-surface-container-lowest rounded shadow-md flex flex-col justify-between overflow-hidden group hover-lift reveal-on-scroll delay-200">
+              <div class="p-space-lg flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-space-xs py-space-2xs rounded bg-primary-fixed text-on-primary-fixed-variant font-eyebrow-technical text-[10px] uppercase font-bold">SERIES: RG-AUTO-ROBOT</span>
+                  <span class="material-symbols-outlined text-primary text-[24px]">precision_manufacturing</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Smart Factory Automation</h3>
+                  <p class="font-body-sm text-body-sm text-secondary mt-space-2xs">
+                    Custom multi-axis Cartesian &amp; SCARA pick-and-place robotics, automated optical inspection (AOI) conveyors, and integrated PLC-SCADA panels.
+                  </p>
+                </div>
+                <!-- Spec Matrix -->
+                <div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs font-data-mono text-data-mono">
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Controllers:</span>
+                    <span class="font-semibold text-on-surface">Siemens S7-1500 / AB ControlLogix</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Repeatability:</span>
+                    <span class="font-semibold text-on-surface">± 0.02 mm</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Networking:</span>
+                    <span class="font-semibold text-on-surface">PROFINET • EtherNet/IP • OPC-UA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container-high flex items-center justify-between">
+                <button class="font-eyebrow-technical text-eyebrow-technical text-primary hover:underline uppercase cursor-pointer" data-inspect-model="automation" type="button">INSPECT CAD MODEL</button>
+                <a class="inline-flex items-center gap-space-2xs font-label-btn text-label-btn text-primary hover:text-on-primary-fixed-variant transition-colors uppercase" href="products.html#automation">
+                  <span>Explore Series</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 4: Heavy Fabrication & CNC -->
+            <div class="bg-surface-container-lowest rounded shadow-md flex flex-col justify-between overflow-hidden group hover-lift reveal-on-scroll">
+              <div class="p-space-lg flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-space-xs py-space-2xs rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-eyebrow-technical text-[10px] uppercase font-bold">SERIES: RG-HEAVY-FAB</span>
+                  <span class="material-symbols-outlined text-tertiary text-[24px]">construction</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Heavy Fabrication &amp; Enclosures</h3>
+                  <p class="font-body-sm text-body-sm text-secondary mt-space-2xs">
+                    Structural stainless steel &amp; carbon steel machinery frames, high-pressure reaction vessels, and robotic laser-welded soundproof acoustic enclosures.
+                  </p>
+                </div>
+                <!-- Spec Matrix -->
+                <div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs font-data-mono text-data-mono">
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Materials:</span>
+                    <span class="font-semibold text-on-surface">SS304, SS316L, Hastelloy, MS</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Laser Cutting:</span>
+                    <span class="font-semibold text-on-surface">Up to 25mm Mild Steel / 15mm SS</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Welding Spec:</span>
+                    <span class="font-semibold text-on-surface">ASME Sec IX • TIG / MIG / Arc</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container-high flex items-center justify-between">
+                <span class="font-eyebrow-technical text-eyebrow-technical text-tertiary uppercase">CATALOG REF: #RG-MF33</span>
+                <a class="inline-flex items-center gap-space-2xs font-label-btn text-label-btn text-tertiary hover:text-on-tertiary-fixed-variant transition-colors uppercase" href="services.html#service-fab">
+                  <span>Enquire Now</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 5: 2D & 3D CAD/CAM Modeling & FEA -->
+            <div class="bg-surface-container-lowest rounded shadow-md flex flex-col justify-between overflow-hidden group hover-lift reveal-on-scroll delay-100">
+              <div class="p-space-lg flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-space-xs py-space-2xs rounded bg-primary-fixed text-on-primary-fixed-variant font-eyebrow-technical text-[10px] uppercase font-bold">SERIES: RG-ENG-SIM</span>
+                  <span class="material-symbols-outlined text-primary text-[24px]">view_in_ar</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">2D &amp; 3D CAD/CAM &amp; FEA Modeling</h3>
+                  <p class="font-body-sm text-body-sm text-secondary mt-space-2xs">
+                    End-to-end parametric modeling, computational fluid dynamics (CFD) for chamber air distribution, and structural thermal fatigue simulations.
+                  </p>
+                </div>
+                <!-- Spec Matrix -->
+                <div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs font-data-mono text-data-mono">
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Software Stack:</span>
+                    <span class="font-semibold text-on-surface">SolidWorks, ANSYS, NX CAD</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Simulation:</span>
+                    <span class="font-semibold text-on-surface">Structural • Thermal • CFD</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Deliverables:</span>
+                    <span class="font-semibold text-on-surface">STEP, DXF, FEA Stress Reports</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container-high flex items-center justify-between">
+                <span class="font-eyebrow-technical text-eyebrow-technical text-primary uppercase">CATALOG REF: #RG-DS02</span>
+                <a class="inline-flex items-center gap-space-2xs font-label-btn text-label-btn text-primary hover:text-on-primary-fixed-variant transition-colors uppercase" href="services.html#service-fea">
+                  <span>Enquire Now</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 6: Turnkey Commissioning & DQ/IQ/OQ -->
+            <div class="bg-surface-container-lowest rounded shadow-md flex flex-col justify-between overflow-hidden group hover-lift reveal-on-scroll delay-200">
+              <div class="p-space-lg flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-space-xs py-space-2xs rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-eyebrow-technical text-[10px] uppercase font-bold">SERIES: RG-VAL-COMM</span>
+                  <span class="material-symbols-outlined text-tertiary text-[24px]">fact_check</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Turnkey Commissioning &amp; IQ/OQ</h3>
+                  <p class="font-body-sm text-body-sm text-secondary mt-space-2xs">
+                    Comprehensive on-site plant erection, piping tie-ins, multi-point temperature mapping, and 21 CFR Part 11 validation audit documentation.
+                  </p>
+                </div>
+                <!-- Spec Matrix -->
+                <div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-xs font-data-mono text-data-mono">
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Validation Dossier:</span>
+                    <span class="font-semibold text-on-surface">DQ, IQ, OQ, PQ Protocols</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Data Logging:</span>
+                    <span class="font-semibold text-on-surface">NABL Calibrated Multi-Channel</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-secondary">Field Scope:</span>
+                    <span class="font-semibold text-on-surface">Erection, Handover, Operator Training</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-space-md bg-surface-container-high flex items-center justify-between">
+                <span class="font-eyebrow-technical text-eyebrow-technical text-tertiary uppercase">CATALOG REF: #RG-TN77</span>
+                <a class="inline-flex items-center gap-space-2xs font-label-btn text-label-btn text-tertiary hover:text-on-tertiary-fixed-variant transition-colors uppercase" href="services.html#service-val">
+                  <span>Enquire Now</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- 4. ENGINEERING PROCESS PIPELINE (Linear Precision Stepper)        -->
+      <!-- ================================================================= -->
+      <section class="w-full bg-surface-container-high py-space-3xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop" id="process">
+        <div class="max-w-[1440px] mx-auto flex flex-col gap-space-2xl">
+          <!-- Stepper Header -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md reveal-on-scroll">
+            <div>
+              <span class="font-eyebrow-technical text-eyebrow-technical text-tertiary uppercase tracking-widest">
+                OPERATIONAL METHODOLOGY
+              </span>
+              <h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold mt-space-2xs">
+                From Blueprint to Industrial Deployment
+              </h2>
+            </div>
+            <div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-lowest shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+              <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-on-surface">Central Audit Badge: Engineered for Performance</span>
+            </div>
+          </div>
+
+          <!-- Process Steps Container -->
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-space-md relative">
+            <!-- Step 1 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between relative group hover-lift reveal-on-scroll">
+              <div class="flex items-center justify-between mb-space-md">
+                <span class="font-data-mono text-[24px] font-bold text-primary">01</span>
+                <span class="w-8 h-8 rounded bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant font-bold text-body-sm">
+                  <span class="material-symbols-outlined text-[18px]">straighten</span>
+                </span>
+              </div>
+              <div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Engineering Precision</h4>
+                <p class="font-body-sm text-body-sm text-secondary mt-space-xs">
+                  Client tolerance profiling, mechanical load calculations, 3D CAD modeling, and CFD airflow optimization.
+                </p>
+              </div>
+              <span class="font-eyebrow-technical text-[10px] text-primary uppercase mt-space-md">Phase: Design • DFM</span>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between relative group hover-lift reveal-on-scroll delay-100">
+              <div class="flex items-center justify-between mb-space-md">
+                <span class="font-data-mono text-[24px] font-bold text-tertiary">02</span>
+                <span class="w-8 h-8 rounded bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant font-bold text-body-sm">
+                  <span class="material-symbols-outlined text-[18px]">verified_user</span>
+                </span>
+              </div>
+              <div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Quality Assurance</h4>
+                <p class="font-body-sm text-body-sm text-secondary mt-space-xs">
+                  Raw material metallurgic certification, helium leak testing of coils, and ISO 9001:2015 stage gate checks.
+                </p>
+              </div>
+              <span class="font-eyebrow-technical text-[10px] text-tertiary uppercase mt-space-md">Phase: Material QC</span>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between relative group hover-lift reveal-on-scroll delay-200">
+              <div class="flex items-center justify-between mb-space-md">
+                <span class="font-data-mono text-[24px] font-bold text-primary">03</span>
+                <span class="w-8 h-8 rounded bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant font-bold text-body-sm">
+                  <span class="material-symbols-outlined text-[18px]">settings_input_component</span>
+                </span>
+              </div>
+              <div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Application Eng.</h4>
+                <p class="font-body-sm text-body-sm text-secondary mt-space-xs">
+                  High-precision CNC laser cutting, automated TIG welding, insulation baffling, and customized PLC control builds.
+                </p>
+              </div>
+              <span class="font-eyebrow-technical text-[10px] text-primary uppercase mt-space-md">Phase: Fabrication</span>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between relative group hover-lift reveal-on-scroll delay-300">
+              <div class="flex items-center justify-between mb-space-md">
+                <span class="font-data-mono text-[24px] font-bold text-tertiary">04</span>
+                <span class="w-8 h-8 rounded bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant font-bold text-body-sm">
+                  <span class="material-symbols-outlined text-[18px]">network_check</span>
+                </span>
+              </div>
+              <div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Technical Reliability</h4>
+                <p class="font-body-sm text-body-sm text-secondary mt-space-xs">
+                  72-hour continuous burn-in cycle, 16-point NABL temperature mapping, and PID loop calibration before dispatch.
+                </p>
+              </div>
+              <span class="font-eyebrow-technical text-[10px] text-tertiary uppercase mt-space-md">Phase: Factory Test (FAT)</span>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between relative group hover-lift reveal-on-scroll delay-400">
+              <div class="flex items-center justify-between mb-space-md">
+                <span class="font-data-mono text-[24px] font-bold text-primary">05</span>
+                <span class="w-8 h-8 rounded bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant font-bold text-body-sm">
+                  <span class="material-symbols-outlined text-[18px]">local_shipping</span>
+                </span>
+              </div>
+              <div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Delivery &amp; Execution</h4>
+                <p class="font-body-sm text-body-sm text-secondary mt-space-xs">
+                  Rigged on-site placement, utility hookups, IQ/OQ commissioning execution, and operator certification training.
+                </p>
+              </div>
+              <span class="font-eyebrow-technical text-[10px] text-primary uppercase mt-space-md">Phase: On-Site Handover</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- 5. MISSION & VISION DUAL-TONE INDUSTRIAL BAND                      -->
+      <!-- ================================================================= -->
+      <section class="w-full grid grid-cols-1 lg:grid-cols-2" id="mission-vision">
+        <!-- Mission Panel: Deep Maroon -->
+        <div class="bg-primary-container text-on-primary py-space-3xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop flex flex-col justify-between gap-space-xl reveal-left">
+          <div class="flex flex-col gap-space-xs">
+            <span class="inline-flex items-center gap-space-2xs font-eyebrow-technical text-eyebrow-technical text-on-primary-container uppercase tracking-widest">
+              <span class="material-symbols-outlined text-[16px]">flag</span>
+              OUR CORE MISSION
+            </span>
+            <h3 class="font-headline-xl text-headline-xl text-on-primary uppercase font-bold tracking-tight">
+              Solve. Engineer. Deliver.
+            </h3>
+            <p class="font-body-lg text-body-lg text-primary-fixed leading-relaxed pt-space-xs max-w-xl">
+              To provide mission-critical thermal, environmental, and automated robotic solutions that empower Indian and global manufacturing ecosystems to achieve world-class product reliability without compromise.
+            </p>
+          </div>
+          <!-- Blueprint Checkpoint Bullets -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-md border-t border-on-primary/10">
+            <div class="flex items-start gap-space-xs">
+              <span class="material-symbols-outlined text-on-primary-container text-[20px]">check_circle</span>
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-on-primary uppercase font-semibold">Zero-Tolerance Quality</span>
+                <span class="font-body-sm text-body-sm text-primary-fixed">Every chamber calibrated against traceable standards.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-space-xs">
+              <span class="material-symbols-outlined text-on-primary-container text-[20px]">check_circle</span>
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-on-primary uppercase font-semibold">Fast Rapid Response</span>
+                <span class="font-body-sm text-body-sm text-primary-fixed">Dedicated pan-India service desks for zero plant downtime.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision Panel: Dark Slate / Tertiary Container -->
+        <div class="bg-inverse-surface text-inverse-on-surface py-space-3xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop flex flex-col justify-between gap-space-xl reveal-right">
+          <div class="flex flex-col gap-space-xs">
+            <span class="inline-flex items-center gap-space-2xs font-eyebrow-technical text-eyebrow-technical text-tertiary-fixed uppercase tracking-widest">
+              <span class="material-symbols-outlined text-[16px]">visibility</span>
+              STRATEGIC VISION
+            </span>
+            <h3 class="font-headline-xl text-headline-xl text-inverse-on-surface uppercase font-bold tracking-tight">
+              Engineering the Next Standard.
+            </h3>
+            <p class="font-body-lg text-body-lg text-surface-variant leading-relaxed pt-space-xs max-w-xl">
+              Defining industrial manufacturing excellence through continuous investment in automated computational tools, eco-friendly low-GWP refrigeration systems, and Industry 4.0 smart factory integrations.
+            </p>
+          </div>
+          <!-- Blueprint Checkpoint Bullets -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-md border-t border-inverse-on-surface/10">
+            <div class="flex items-start gap-space-xs">
+              <span class="material-symbols-outlined text-tertiary-fixed text-[20px]">bolt</span>
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-inverse-on-surface uppercase font-semibold">Sustainable Systems</span>
+                <span class="font-body-sm text-body-sm text-surface-variant">Transitioning test chambers to future-ready ultra-low GWP refrigerants.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-space-xs">
+              <span class="material-symbols-outlined text-tertiary-fixed text-[20px]">memory</span>
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-inverse-on-surface uppercase font-semibold">Autonomous Analytics</span>
+                <span class="font-body-sm text-body-sm text-surface-variant">IoT remote cloud diagnostic telemetry across operational test suites.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- 6. TRUSTED BY / INDUSTRIAL CLIENT ACCREDITATIONS                  -->
+      <!-- ================================================================= -->
+      <section class="w-full bg-surface-container py-space-2xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop" id="clients">
+        <div class="max-w-[1440px] mx-auto flex flex-col gap-space-xl items-center text-center reveal-on-scroll">
+          <div class="flex flex-col gap-space-2xs">
+            <span class="font-eyebrow-technical text-eyebrow-technical text-primary uppercase tracking-widest">
+              VALIDATED IN THE FIELD
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface uppercase font-bold">
+              Trusted by Industry Leaders Across High-Consequence Sectors
+            </h2>
+          </div>
+          <!-- Client Grid / Tonal Badge Strip -->
+          <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-space-md">
+            <div class="bg-surface-container-lowest p-space-md rounded flex flex-col items-center justify-center text-center shadow-sm hover-lift">
+              <span class="font-headline-sm text-headline-sm font-bold text-on-surface">TATA MOTORS</span>
+              <span class="font-eyebrow-technical text-[9px] text-secondary uppercase mt-space-2xs">Automotive Tier-1</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-md rounded flex flex-col items-center justify-center text-center shadow-sm hover-lift">
+              <span class="font-headline-sm text-headline-sm font-bold text-on-surface">BHARAT ELEC</span>
+              <span class="font-eyebrow-technical text-[9px] text-secondary uppercase mt-space-2xs">Defense &amp; Avionics</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-md rounded flex flex-col items-center justify-center text-center shadow-sm hover-lift">
+              <span class="font-headline-sm text-headline-sm font-bold text-on-surface">DRDO LABS</span>
+              <span class="font-eyebrow-technical text-[9px] text-secondary uppercase mt-space-2xs">Research &amp; R&amp;D</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-md rounded flex flex-col items-center justify-center text-center shadow-sm hover-lift">
+              <span class="font-headline-sm text-headline-sm font-bold text-on-surface">ISRO VENDORS</span>
+              <span class="font-eyebrow-technical text-[9px] text-secondary uppercase mt-space-2xs">Space Tech Ecosystem</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-md rounded flex flex-col items-center justify-center text-center shadow-sm hover-lift">
+              <span class="font-headline-sm text-headline-sm font-bold text-on-surface">BOSCH AUTO</span>
+              <span class="font-eyebrow-technical text-[9px] text-secondary uppercase mt-space-2xs">Sensor Testing</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-md rounded flex flex-col items-center justify-center text-center shadow-sm hover-lift">
+              <span class="font-headline-sm text-headline-sm font-bold text-on-surface">CIPLA PHARMA</span>
+              <span class="font-eyebrow-technical text-[9px] text-secondary uppercase mt-space-2xs">Cleanroom Enclosures</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- 7. FEATURED ENGINEERING PROJECTS GALLERY                          -->
+      <!-- ================================================================= -->
+      <section class="w-full py-space-3xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop bg-background" id="projects-preview">
+        <div class="max-w-[1440px] mx-auto flex flex-col gap-space-2xl">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md reveal-on-scroll">
+            <div>
+              <span class="font-eyebrow-technical text-eyebrow-technical text-primary uppercase tracking-widest">
+                PROVEN INSTALLATIONS
+              </span>
+              <h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold mt-space-2xs">
+                Featured Turnkey Deployments
+              </h2>
+            </div>
+            <a class="font-label-btn text-label-btn uppercase text-primary hover:text-on-primary-fixed-variant transition-colors flex items-center gap-space-2xs" href="projects.html">
+              <span>View All Case Studies</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Project Showcase Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+            <!-- Project 1 -->
+            <div class="bg-surface-container-lowest rounded shadow-md overflow-hidden flex flex-col justify-between hover-lift reveal-on-scroll">
+              <div class="h-48 bg-surface-container relative overflow-hidden">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Industrial automotive walk-in environmental test chamber with illuminated digital control console in a clean assembly plant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnHA-tpw3WNCR7WHDM0IeXST4T8g8SqTh5dgDKA1OqGzgCjZ3qemqwU0l9BF2rJTy1IDb3WmOUmVka5WMc6AzPdknwhrcgeDRR3m86P-l6RxpqHQ2WQR3TwcZLLuXif-D5tjMke-WAtHlqW3cZG-tWFWc79tCaS7XRpp9LE5-9-RXRV9yiOhBojwWO-Nibzk21_RKMDfbpV6gw7-S8EzAoAylVUIDiSlt1uj9scYn9lkbGO2o7FzlQtQ"/>
+                <span class="absolute top-space-xs left-space-xs px-space-xs py-space-2xs bg-inverse-surface/85 text-inverse-on-surface font-eyebrow-technical text-[9px] uppercase rounded">
+                  PUNE • AUTOMOTIVE
+                </span>
+              </div>
+              <div class="p-space-md flex flex-col gap-space-xs">
+                <h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">
+                  35,000L Walk-in Climatic Chamber
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Dual-zone temperature and humidity drive-in test facility for full electric vehicle powertrain evaluation (-40°C to +120°C).
+                </p>
+                <div class="mt-space-xs pt-space-xs flex justify-between font-data-mono text-data-mono text-secondary">
+                  <span>Commissioned: 2024</span>
+                  <span class="text-primary font-semibold">100% FAT Passed</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-surface-container-lowest rounded shadow-md overflow-hidden flex flex-col justify-between hover-lift reveal-on-scroll delay-100">
+              <div class="h-48 bg-surface-container relative overflow-hidden">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern ISO Class 5 modular pharmaceutical cleanroom interior with stainless steel casework and laminar air flow fume hoods" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYP4Pig7FQQaCV1HBa8MR4Tiz79-vbTuZ0c71DaH0mAKT0n8w956zfAzNz773_rCyEpgrNSQusfXOw6xNlV7l3I-QJZCEVTgG-BmUw-8kpqI0cbpbXXzwQXJhwAEAjtqVrLhamB0ISNv-hyYcXGkYqXsm-tqOGTJsIA65RDWy5EAj-W2yttdPi1v2qFZbE5DiqR9zhesBL3wbtnLLioKMgNBmOiawbxGqFDrCCh22OlKaGRWA01pGtFQ"/>
+                <span class="absolute top-space-xs left-space-xs px-space-xs py-space-2xs bg-inverse-surface/85 text-inverse-on-surface font-eyebrow-technical text-[9px] uppercase rounded">
+                  HYDERABAD • PHARMA
+                </span>
+              </div>
+              <div class="p-space-md flex flex-col gap-space-xs">
+                <h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">
+                  Modular Class 100 Lab Suite
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Turnkey chemical containment infrastructure featuring 12 aerodynamic fume hoods, chemical scrubbers, and HEPA laminar air plenums.
+                </p>
+                <div class="mt-space-xs pt-space-xs flex justify-between font-data-mono text-data-mono text-secondary">
+                  <span>Commissioned: 2024</span>
+                  <span class="text-tertiary font-semibold">21 CFR Validated</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-surface-container-lowest rounded shadow-md overflow-hidden flex flex-col justify-between hover-lift reveal-on-scroll delay-200">
+              <div class="h-48 bg-surface-container relative overflow-hidden">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Robotic conveyor automation line with high-speed Cartesian arms and PLC SCADA command terminal in a manufacturing plant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9gdQh7N5jc6lDgCqTuAUUUvQ-BcrGHsDHZbaG30Uk4OTWuPCQs62tBJigqmjqJyY8uZDWxSshILB0zRBsQi93etI_e0VuNUOcJgScJwZ9W55tfmpjciVG-pGgA7vD_pUop3jxArN1Jydkv3JKcqgNvZC9wNyAEnhylORwYLbzSTr6lyOihHgqoaSLc98Sm47kC3FazF0XWn0qRLE72kUjFmcUeoapDe2hcBhoawWhM7jnnLSgR1hoJA"/>
+                <span class="absolute top-space-xs left-space-xs px-space-xs py-space-2xs bg-inverse-surface/85 text-inverse-on-surface font-eyebrow-technical text-[9px] uppercase rounded">
+                  BENGALURU • DEFENSE
+                </span>
+              </div>
+              <div class="p-space-md flex flex-col gap-space-xs">
+                <h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">
+                  Automated Sensor Testing Rig
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  High-throughput multi-station pneumatic indexing table integrated with thermal shock testing chamber and barcode tracking SCADA.
+                </p>
+                <div class="mt-space-xs pt-space-xs flex justify-between font-data-mono text-data-mono text-secondary">
+                  <span>Commissioned: 2023</span>
+                  <span class="text-primary font-semibold">Cpk &gt; 1.67</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-surface-container-lowest rounded shadow-md overflow-hidden flex flex-col justify-between hover-lift reveal-on-scroll delay-300">
+              <div class="h-48 bg-surface-container relative overflow-hidden">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heavy fabrication plant showing massive stainless steel ASME pressure vessel shell under robotic orbital laser welding" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKCNjCgdAIioM3AXY6EdstbdAWJvF0N8uC5cFJFKZmDeWd1r4MLMCllZHs4pa9hwnHvW02p2fAADuWxTu3wS2M7VkcWs1GbbLD5VdFwUQZ4GYv9ejFvIjdAzBfVaOF_bwfJN3c219iS4UNfCsURB3N8BiKB3q8W3hy5hLrL0dVEUuY1Xz_ODX7Oz3qHL37nI632ztDUSzwiq_z6VJWm3pnynKEhg3pFbxTxiA5M2z9nz6ok3USzCFX8g"/>
+                <span class="absolute top-space-xs left-space-xs px-space-xs py-space-2xs bg-inverse-surface/85 text-inverse-on-surface font-eyebrow-technical text-[9px] uppercase rounded">
+                  CHAKAN • HEAVY INDUSTRY
+                </span>
+              </div>
+              <div class="p-space-md flex flex-col gap-space-xs">
+                <h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">
+                  ASME Certified Pressure Vessel
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  SS316L 18-bar jacketed reaction autoclave designed with finite element analysis for petrochemical catalyst qualification tests.
+                </p>
+                <div class="mt-space-xs pt-space-xs flex justify-between font-data-mono text-data-mono text-secondary">
+                  <span>Commissioned: 2023</span>
+                  <span class="text-tertiary font-semibold">Hydro-tested 27 Bar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- 8. TECHNICAL PULL QUOTE BANNER                                    -->
+      <!-- ================================================================= -->
+      <section class="w-full bg-surface-container-high py-space-3xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop text-center">
+        <div class="max-w-4xl mx-auto flex flex-col items-center gap-space-md reveal-scale">
+          <span class="material-symbols-outlined text-primary text-[44px]">format_quote</span>
+          <blockquote class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold tracking-tight leading-tight">
+            “Where engineering precision meets practical performance.”
+          </blockquote>
+          <div class="flex items-center gap-space-xs mt-space-xs">
+            <span class="w-6 h-[2px] bg-primary"></span>
+            <span class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase tracking-wider">
+              RANGO ENGINEERING SOLUTIONS • PUNE PLANT HEADQUARTERS
+            </span>
+            <span class="w-6 h-[2px] bg-primary"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- 9. RAPID RFQ FORM & DIRECT INQUIRY BAND                           -->
+      <!-- ================================================================= -->
+      <section class="w-full bg-inverse-surface text-inverse-on-surface py-space-4xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop" id="rfq-section">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
+          <!-- RFQ Info Left Column -->
+          <div class="lg:col-span-5 flex flex-col gap-space-md reveal-left">
+            <span class="font-eyebrow-technical text-eyebrow-technical text-on-primary-container uppercase tracking-widest">
+              DIRECT FACTORY ACCESS
+            </span>
+            <h2 class="font-headline-xl text-headline-xl text-inverse-on-surface uppercase font-bold leading-tight">
+              Have a Technical Requirement? Let’s Engineer the Right Solution.
+            </h2>
+            <p class="font-body-md text-body-md text-surface-variant leading-relaxed">
+              Submit your design requirements, chamber dimensions, temperature cycling profiles, or factory automation specs. Our senior application engineers will evaluate your parameters and issue an engineering feasibility quote within 24 hours.
+            </p>
+
+            <!-- Direct Instant Communication Links -->
+            <div class="flex flex-col gap-space-sm pt-space-md">
+              <a class="inline-flex items-center gap-space-md p-space-md rounded bg-surface-container-lowest/10 hover:bg-surface-container-lowest/15 transition-all text-inverse-on-surface" href="https://wa.me/919876543210" target="_blank" rel="noopener">
+                <span class="w-10 h-10 rounded bg-tertiary flex items-center justify-center text-on-tertiary">
+                  <span class="material-symbols-outlined text-[22px]">chat</span>
+                </span>
+                <div class="flex flex-col">
+                  <span class="font-eyebrow-technical text-[10px] text-tertiary-fixed uppercase">Instant WhatsApp Desk</span>
+                  <span class="font-data-mono text-data-mono font-semibold">+91 98765 43210 (Technical Support)</span>
+                </div>
+              </a>
+              <a class="inline-flex items-center gap-space-md p-space-md rounded bg-surface-container-lowest/10 hover:bg-surface-container-lowest/15 transition-all text-inverse-on-surface" href="tel:+9102027654321">
+                <span class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-on-primary">
+                  <span class="material-symbols-outlined text-[22px]">call</span>
+                </span>
+                <div class="flex flex-col">
+                  <span class="font-eyebrow-technical text-[10px] text-on-primary-container uppercase">Direct Sales Engineering Line</span>
+                  <span class="font-data-mono text-data-mono font-semibold">+91 (020) 2765-4321</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="pt-space-xs font-data-mono text-[11px] text-surface-variant flex items-center gap-space-xs">
+              <span class="material-symbols-outlined text-primary-fixed text-[16px]">lock</span>
+              <span>All CAD/STEP models shared are protected under standard industrial Non-Disclosure Agreements (NDA).</span>
+            </div>
+          </div>
+
+          <!-- Rapid RFQ Form Right Column -->
+          <div class="lg:col-span-7 bg-surface-container-lowest text-on-surface p-space-xl md:p-space-2xl rounded shadow-xl reveal-right">
+            <form class="flex flex-col gap-space-md" id="industrialRfqForm" onsubmit="event.preventDefault(); document.getElementById('rfqSuccess').classList.remove('hidden'); this.reset();">
+              <div class="flex flex-col gap-space-2xs">
+                <span class="font-eyebrow-technical text-eyebrow-technical text-primary uppercase">REQUEST FOR PROPOSAL (RFP / RFQ)</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Fast Technical Evaluation Form</h3>
+              </div>
+
+              <!-- Form Fields Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+                <div class="flex flex-col gap-space-2xs">
+                  <label class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase">Full Name *</label>
+                  <input class="h-10 px-space-sm bg-surface-container-low text-on-surface rounded font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="e.g. Rajesh Kumar" required="" type="text"/>
+                </div>
+                <div class="flex flex-col gap-space-2xs">
+                  <label class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase">Company / Organization *</label>
+                  <input class="h-10 px-space-sm bg-surface-container-low text-on-surface rounded font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="e.g. Mahindra Defence Systems" required="" type="text"/>
+                </div>
+                <div class="flex flex-col gap-space-2xs">
+                  <label class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase">Corporate Email *</label>
+                  <input class="h-10 px-space-sm bg-surface-container-low text-on-surface rounded font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="rajesh.k@company.com" required="" type="email"/>
+                </div>
+                <div class="flex flex-col gap-space-2xs">
+                  <label class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase">Direct Mobile / WhatsApp *</label>
+                  <input class="h-10 px-space-sm bg-surface-container-low text-on-surface rounded font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="+91 98000 00000" required="" type="tel"/>
+                </div>
+              </div>
+
+              <!-- Product Category Select -->
+              <div class="flex flex-col gap-space-2xs">
+                <label class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase">Primary Technical Solution Needed *</label>
+                <select class="h-10 px-space-sm bg-surface-container-low text-on-surface rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container transition-all">
+                  <option value="test-chamber">Environmental / Thermal Test Chamber (Climatic, Thermal Shock, Dust)</option>
+                  <option value="cleanroom">Laboratory Turnkey Setup &amp; Chemical Fume Hoods</option>
+                  <option value="automation">Robotic Factory Automation &amp; PLC-SCADA Panels</option>
+                  <option value="heavy-fab">Heavy Stainless Steel / Pressure Vessel Fabrication</option>
+                  <option value="fea-cad">CAD/CAM 3D Engineering &amp; FEA Simulation Services</option>
+                  <option value="turnkey">Complete Plant Erection &amp; Turnkey Commissioning</option>
+                </select>
+              </div>
+
+              <!-- Technical Notes Textarea -->
+              <div class="flex flex-col gap-space-2xs">
+                <label class="font-eyebrow-technical text-eyebrow-technical text-secondary uppercase">Technical Specifications &amp; Requirements *</label>
+                <textarea class="p-space-sm bg-surface-container-low text-on-surface rounded font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="Provide temperature bounds, internal workspace volume (Liters), test standards (MIL/ASTM/IEC), payload weight, or project timeline..." required="" rows="3"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button class="h-12 bg-primary-container text-on-primary font-label-btn text-label-btn uppercase tracking-wider rounded shadow-md hover:bg-primary transition-all flex items-center justify-center gap-space-xs mt-space-xs cursor-pointer" type="submit">
+                <span>Submit Technical RFQ Specification</span>
+                <span class="material-symbols-outlined text-[18px]">send</span>
+              </button>
+
+              <!-- Success Feedback Alert -->
+              <div class="hidden p-space-sm bg-surface-container text-on-surface rounded flex items-center gap-space-xs font-data-mono text-data-mono" id="rfqSuccess">
+                <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                <span>RFQ logged successfully! Application Engineer will contact you within 24 hours.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Technical Blueprint Quick-View Modal -->
+  <div class="modal-backdrop fixed inset-0 z-50 bg-inverse-surface/75 backdrop-blur-md flex items-center justify-center p-space-md" id="blueprint-modal">
+    <div class="modal-content bg-surface-container-lowest rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col">
+      <div class="p-space-md bg-surface-container-high border-b border-surface-container flex items-center justify-between sticky top-0 z-10">
+        <div class="flex items-center gap-space-sm">
+          <span class="font-data-mono text-data-mono font-bold text-primary" id="modal-product-code">SERIES: RG-RH-1000</span>
+          <span class="px-2 py-0.5 rounded bg-surface-container font-eyebrow-technical text-eyebrow-technical text-secondary" id="modal-product-tag">FLAGSHIP RH RIG</span>
+        </div>
+        <button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="close-blueprint-modal" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="p-space-lg flex flex-col gap-space-lg">
+        <div class="flex flex-col md:flex-row gap-space-lg items-start">
+          <div class="w-full md:w-5/12 aspect-[4/3] rounded bg-surface-container overflow-hidden shrink-0">
+            <img class="w-full h-full object-cover" id="modal-product-img" src="" alt="Product Preview"/>
+          </div>
+          <div class="flex flex-col gap-space-xs flex-1">
+            <span class="font-eyebrow-technical text-eyebrow-technical uppercase text-tertiary" id="modal-product-badge">IEC 60068-2 / NABL RECOG</span>
+            <h3 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase" id="modal-product-title">Model Title</h3>
+            <p class="font-body-sm text-body-sm text-secondary" id="modal-product-desc">Model description...</p>
+            <div class="pt-space-xs font-data-mono text-data-mono text-secondary">
+              <span class="font-bold text-on-surface">Test Standards: </span>
+              <span id="modal-standards">IEC 60068, MIL-STD 810G</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabbed Model Inspection -->
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center gap-2 border-b border-surface-container pb-2">
+            <button class="tab-btn modal-tab-btn active px-space-md py-1 rounded bg-surface-container text-on-surface font-label-btn text-label-btn uppercase" data-tab="specs" type="button">Parametric Matrix</button>
+            <button class="tab-btn modal-tab-btn px-space-md py-1 rounded bg-surface-container text-on-surface font-label-btn text-label-btn uppercase" data-tab="schematic" type="button">CAD Schematics</button>
+            <button class="tab-btn modal-tab-btn px-space-md py-1 rounded bg-surface-container text-on-surface font-label-btn text-label-btn uppercase" data-tab="compliance" type="button">Compliance Dossier</button>
+          </div>
+
+          <div class="modal-tab-panel" id="panel-specs">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-space-md" id="modal-specs-list">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <div class="modal-tab-panel hidden" id="panel-schematic">
+            <div class="p-space-md bg-surface-container rounded font-data-mono text-data-mono text-secondary flex flex-col gap-2">
+              <div class="flex items-center justify-between text-on-surface font-bold">
+                <span>CAD FILE: 3D-STEP-REV4.DWG</span>
+                <span class="text-tertiary">ACCURACY: ±0.01 mm</span>
+              </div>
+              <p class="text-body-sm">Parametric solid model contains complete refrigeration circuit, plenum airflow baffles, cam-lock thermal wall junctions, and 9-point calibrated PT100 sensor matrix.</p>
+              <div class="h-32 rounded bg-surface-container-high cad-grid-light flex items-center justify-center text-primary font-bold">
+                [ 2D/3D SCHEMATIC PREVIEW VECTOR LOADED ]
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-tab-panel hidden" id="panel-compliance">
+            <div class="p-space-md bg-surface-container rounded font-body-sm text-body-sm text-secondary flex flex-col gap-2">
+              <span class="font-bold text-on-surface font-headline-sm uppercase">NABL Traceable Test Protocol (FAT &amp; SAT)</span>
+              <p>Every chamber is subjected to 72 hours continuous cyclic thermal stress screening with certified calibration data logs prior to factory dispatch.</p>
+              <div class="flex items-center gap-space-md font-data-mono text-data-mono text-tertiary pt-2">
+                <span>• IQ/OQ Documentation Included</span>
+                <span>• 21 CFR Part 11 Audit Trail Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end gap-space-sm pt-space-sm border-t border-surface-container">
+          <button class="px-space-md py-space-xs rounded bg-surface-container text-on-surface font-label-btn text-label-btn uppercase hover:bg-surface-variant transition-colors" onclick="document.getElementById('blueprint-modal').classList.remove('active'); document.body.style.overflow='';" type="button">Close</button>
+          <button class="px-space-lg py-space-xs rounded bg-primary-container text-on-primary font-label-btn text-label-btn uppercase hover:bg-primary transition-all flex items-center gap-1" id="modal-rfq-action" data-open-rfq type="button">
+            <span>Enquire on this Model</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global RFQ Modal -->
+  <div class="modal-backdrop fixed inset-0 z-50 bg-inverse-surface/75 backdrop-blur-md flex items-center justify-center p-space-md" id="global-rfq-modal">
+    <div class="modal-content bg-surface-container-lowest rounded-xl max-w-2xl w-full p-space-xl shadow-2xl relative">
+      <button class="absolute top-space-md right-space-md w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" id="close-rfq-modal" type="button">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <div class="flex flex-col gap-space-2xs mb-space-md">
+        <span class="font-eyebrow-technical text-eyebrow-technical text-primary uppercase">APPLICATION ENGINEERING DESK</span>
+        <h3 class="font-headline-lg text-headline-lg font-bold uppercase text-on-surface">Request Technical Feasibility &amp; Quote</h3>
+        <p class="font-body-sm text-body-sm text-secondary">Our Pune factory engineers evaluate parameters and respond with drawings &amp; feasibility in 24 hours.</p>
+      </div>
+
+      <form class="flex flex-col gap-space-sm" id="modal-rfq-form">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+          <div class="flex flex-col gap-1">
+            <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Name *</label>
+            <input class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" required="" type="text" placeholder="Rajesh Kumar"/>
+          </div>
+          <div class="flex flex-col gap-1">
+            <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Company *</label>
+            <input class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" required="" type="text" placeholder="Mahindra Defence / Tata"/>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+          <div class="flex flex-col gap-1">
+            <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Email *</label>
+            <input class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" required="" type="email" placeholder="rajesh@company.com"/>
+          </div>
+          <div class="flex flex-col gap-1">
+            <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Mobile / WhatsApp *</label>
+            <input class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" required="" type="tel" placeholder="+91 98000 00000"/>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Equipment Model / Solution *</label>
+          <select class="h-10 px-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" id="modal-rfq-model-select">
+            <option>RH-Series Temperature &amp; Humidity Test Chamber</option>
+            <option>TS-Series Three-Zone Thermal Shock Chamber</option>
+            <option>WIC-Pro Walk-in Climatic Chamber</option>
+            <option>SSC-Series Salt Spray Fog Chamber</option>
+            <option>IND-Robotics Automated Testing Cell</option>
+            <option>MOD-Lab Cleanroom Modular Casework</option>
+            <option>Custom Engineering Solution (Bespoke Specs)</option>
+          </select>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="font-eyebrow-technical text-eyebrow-technical uppercase text-secondary">Operating Specs / Chamber Capacity *</label>
+          <textarea class="p-space-sm bg-surface-container rounded font-data-mono text-data-mono focus:outline-none focus:ring-2 focus:ring-primary-container" rows="3" placeholder="Volume (Liters), temperature range, standard (MIL/IEC/ASTM), or target timeline..." required=""></textarea>
+        </div>
+
+        <button class="h-12 bg-primary-container text-on-primary font-label-btn text-label-btn uppercase tracking-wider rounded shadow-md hover:bg-primary transition-all flex items-center justify-center gap-space-xs mt-space-xs cursor-pointer" type="submit">
+          <span>Submit Request for Quotation</span>
+          <span class="material-symbols-outlined text-[18px]">send</span>
+        </button>
+      </form>
+
+      <div class="hidden p-space-md bg-tertiary-container text-on-tertiary rounded flex items-center gap-space-sm mt-space-sm" id="modal-rfq-success">
+        <span class="material-symbols-outlined text-tertiary-fixed text-[24px]">task_alt</span>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm uppercase font-bold">RFQ Packet Submitted Successfully</span>
+          <span class="font-body-sm text-body-sm text-on-tertiary-container">Ticket assigned to Chakan Plant Application Engineering Desk.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Jump / Quick Action Bar -->
+  <div class="floating-jump-bar">
+    <button aria-label="Back to Top" class="flex items-center gap-1 font-eyebrow-technical text-[10px] text-primary uppercase font-bold hover:underline cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+      <span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+      <span class="hidden sm:inline">TOP</span>
+    </button>
+    <span class="text-secondary opacity-30">|</span>
+    <button class="flex items-center gap-1 font-eyebrow-technical text-[10px] text-tertiary uppercase font-bold hover:underline cursor-pointer" data-open-rfq>
+      <span class="material-symbols-outlined text-[16px]">request_quote</span>
+      <span>RFQ</span>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w-full bg-inverse-surface text-inverse-on-surface pt-space-3xl pb-space-2xl px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop">
+    <div class="max-w-[1440px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-2xl pb-space-2xl">
+        <div class="lg:col-span-2 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-md">
+            <div class="h-8 w-8 bg-surface-container-lowest flex items-center justify-center rounded">
+              <span class="material-symbols-outlined text-primary text-[20px]">precision_manufacturing</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-headline-sm text-headline-sm uppercase text-inverse-on-surface font-bold">Rango Engineering</span>
+              <span class="font-eyebrow-technical text-eyebrow-technical text-outline-variant uppercase">Industrial Plant Systems</span>
+            </div>
+          </div>
+          <p class="font-body-md text-body-md text-surface-variant max-w-md">
+            Built for Performance. Designed for Durability. Delivering precision manufacturing, custom machining, and turn-key industrial infrastructure with uncompromised engineering tolerances.
+          </p>
+          <div class="flex flex-col gap-space-2xs pt-space-xs font-data-mono text-data-mono text-surface-variant">
+            <div class="flex items-center gap-space-xs">
+              <span class="text-outline-variant">GSTIN:</span><span>27AABCR1234F1Z5</span>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <span class="text-outline-variant">REGD PLANT:</span><span>Plot 48/B, MIDC Industrial Area, Chakan, Pune, MH 410501</span>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <span class="text-outline-variant">COVERAGE:</span><span>PAN India Logistics &amp; On-site Support Desks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-headline-sm text-headline-sm uppercase text-inverse-on-surface font-semibold">Categories</h3>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-variant">
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="products.html#rh-series">Environmental Chambers</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="products.html#ts-series">Thermal Shock Rigs</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="products.html#cleanrooms">Modular Cleanrooms</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="products.html#automation">Industrial Automation Jigs</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="services.html#service-fab">Heavy SS Vessels &amp; Skids</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-headline-sm text-headline-sm uppercase text-inverse-on-surface font-semibold">Company</h3>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-variant">
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="about.html">About Organization</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="projects.html">Turnkey Projects</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="about.html#accreditations">Client Accreditations</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="services.html#execution-framework">Calibration &amp; QC</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="contact.html">Plant Locators</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-headline-sm text-headline-sm uppercase text-inverse-on-surface font-semibold">Technical Bulletin</h3>
+          <p class="font-body-sm text-body-sm text-surface-variant">Receive monthly industrial bulletins, metallurgic research, and machining capability updates.</p>
+          <div class="flex flex-col gap-space-xs pt-space-xs">
+            <input class="bg-surface-variant/10 text-inverse-on-surface placeholder:text-outline-variant px-space-md py-space-xs rounded font-data-mono text-data-mono focus:outline-none focus:ring-1 focus:ring-on-primary-container" placeholder="engineer@domain.com" type="email"/>
+            <button class="bg-primary-container text-on-primary font-label-btn text-label-btn uppercase py-space-xs rounded hover:bg-primary transition-colors cursor-pointer" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md font-data-mono text-data-mono text-surface-variant border-t border-surface-variant/10">
+        <div class="flex items-center gap-space-md flex-wrap">
+          <span>© 2025 Rango Engineering Solutions Pvt. Ltd. All rights reserved.</span>
+          <span class="hidden sm:inline">•</span>
+          <span>ISO 9001:2015 Registered</span>
+        </div>
+        <div class="flex items-center gap-space-lg">
+          <span class="hover:text-inverse-on-surface cursor-pointer">Privacy Policy</span>
+          <span class="hover:text-inverse-on-surface cursor-pointer">Terms of Contract</span>
+          <span class="hover:text-inverse-on-surface cursor-pointer">Quality Manual</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
